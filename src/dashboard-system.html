@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>داشبورد | سامانه راهبران آموزشی</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b4735ff0d1.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/img/nomadic logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ['فسا',     11],
+            ['کازرون',      2],
+            ['فراشبند',  2],
+            ['فیروزآباد', 2],
+            ['شیراز',    7]
+          ]);
+  
+          var options = {
+            title: 'مدیریت آموزش و پرورش عشایر فارس',
+            is3D: true,
+          };
+  
+          var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+          chart.draw(data, options);
+        }
+    </script>
+</head>
+<body dir="rtl" class="bg-light bg-system">
+    <!-- ------------------ Start system education section ------------------ -->
+    <section id="system" class="system-send-report">
+        <button class="menu-btn" type="button"><i class="fa-solid fa-bars"></i></button>
+        <div class="sidebar-system-container">
+            <button class="close-menu-btn" type="button"><i class="fa-regular fa-circle-xmark"></i></button>
+            <button class="anim-width-sidebar-btn" type="button"><img src="assets/img/next-button.png" alt="anim icon"></button>
+            <h5>سامانه راهبران آموزشی</h5>
+            <ul class="sidebar-system-content">
+                <li class="sidebar-items">
+                    <a class="profile-link-item" href="profile-system.html">
+                        <img src="assets/img/profile.png" alt="profile-icon">
+                        <div>
+                            <span>مهدی وارسته نیا</span>
+                            <span>کارشناس آموزش ابتدایی</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a class="active" href="dashboard-system.html">
+                        <img src="assets/img/dashboard.png" alt="dashboard-icon">
+                        <span>داشبورد</span>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a href="report-system.html">
+                        <img src="assets/img/report.png" alt="send-report-icon">
+                        <span>ثبت گزارش</span>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a href="User-information.html">
+                        <img src="assets/img/graph.png" alt="profile-content-icon">
+                        <span>اطلاعات مدارس</span>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a href="viewReport.html">
+                        <img src="assets/img/case-study.png" alt="case-study-icon">
+                        <span>مشاهده گزارش ها</span>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a href="help-system.html">
+                        <img src="assets/img/guidance.png" alt="guidance-icon">
+                        <span>راهنما</span>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a href="login.html">
+                        <img src="assets/img/exit.png" alt="exit-icon">
+                        <span>خروج</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="acount-system-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 acount-name-section">
+                        <h5 class="mb-3"><i class="fa-solid fa-signature mr-1"></i>نمایندگی ها</h5>
+                        <div class="container mt-5 school-card-section">
+                            <div class="row">
+                                <div class="col-12 col-md-3 school-card">
+                                    <a class="text-decoration-none" href="fasa-organization-report.html">
+                                        <div class="school-card-inner">
+                                            <h4>نمایندگی فسا</h4>
+                                            <span>تعداد مدارس تحت پوشش : <strong>350</strong></span>
+                                            <p>مسئول نمایندگی : <strong>آقای وارسته</strong></p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-md-3 school-card">
+                                    <a class="text-decoration-none" href="kazeroun-organization-report.html">
+                                        <div class="school-card-inner">
+                                            <h4>نمایندگی کازرون</h4>
+                                            <span>تعداد مدارس تحت پوشش : <strong>750</strong></span>
+                                            <p>مسئول نمایندگی : <strong>آقای زارع</strong></p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-md-3 school-card">
+                                    <a class="text-decoration-none" href="farashband-organization-report.html">
+                                        <div class="school-card-inner">
+                                            <h4>نمایندگی فراشبند</h4>
+                                            <span>تعداد مدارس تحت پوشش : <strong>450</strong></span>
+                                            <p>مسئول نمایندگی : <strong>آقای کریمی</strong></p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-md-3 school-card">
+                                    <a class="text-decoration-none" href="firusabad-organization-report.html">
+                                        <div class="school-card-inner">
+                                            <h4>نمایندگی فیروزآباد</h4>
+                                            <span>تعداد مدارس تحت پوشش : <strong>520</strong></span>
+                                            <p>مسئول نمایندگی : <strong>آقای رنجبر</strong></p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 exclusive-acount-section">
+                        <h5 class="mb-3"><i class="fa-solid fa-signature mr-1"></i>حوزه راهبری</h5>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a class="text-decoration-none" href="#">
+                                        <div class="exclusive-acount-card">
+                                            <img src="assets/img/exclusive-acount-image.png" alt="exclusive-acount-image">
+                                            <div class="exclusive-acount-content">
+                                                <h4>حوزه راهبری نمایندگی فسا</h4>
+                                                <ul>
+                                                    <li><span>نام مسئول نمایندگی :</span><span>فرشید موسوی</span></li>
+                                                    <li><span>نام راهبر :</span><span>علی حبیبی</span></li>
+                                                    <li><span>تعداد مدارس تحت پوشش :</span><span>140</span></li>
+                                                    <li><span>تعداد معلمان :</span><span>180</span></li>
+                                                    <li><span>تعداد کلاس های چندپایه :</span><span>45</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 statistic-report-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-3 statistic-report-card">
+                                    <div class="statistic-report-card-inner">
+                                        <span>20</span>
+                                        <h5>گزارش های ثبت شده</h5>
+                                        <img src="assets/img/clipboard.svg" alt="clipboard-reports">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3 statistic-report-card">
+                                    <div class="statistic-report-card-inner report-card-bg-2">
+                                        <span>50</span>
+                                        <h5>تعداد راهبران آموزشی</h5>
+                                        <img src="assets/img/person.svg" alt="person">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3 statistic-report-card">
+                                    <div class="statistic-report-card-inner report-card-bg-3">
+                                        <span>5</span>
+                                        <h5>گزارش های مشاهده نشده</h5>
+                                        <img src="assets/img/eye-slash.svg" alt="eye-slash">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3 statistic-report-card">
+                                    <div class="statistic-report-card-inner report-card-bg-4">
+                                        <span>14</span>
+                                        <h5>سوال های پرسیده شده</h5>
+                                        <img src="assets/img/messages-question.svg" alt="message-question">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 chart-school-section">
+                        <div class="chart-inner">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 chart-header-content mb-4">
+                                        <h3>آمار مدارس و فراوانی آن بر حسب درصد</h3>
+                                        <p>آموزش و پرورش عشایری فارس دارای مدارس بسیاری است و از نظر گستردگی و پراکندگی از جمله بزرگترین آموزش و پرورش های کشور به حساب می آید و دارای چهار نمایندگی اصلی شامل <strong>نمایندگی فسا</strong> ، <strong>نمایندگی کازرون</strong> ، <strong>نمایندگی فیروزآباد</strong> و <strong>نمایندگی فراشبند</strong> می باشد.</p>
+                                        <span class="d-block text-center text-danger">آمار ارائه شده بر اساس تعداد مدارس هر نمایندگی می باشد و بر این اساس میزان و درصد هر کدام مشخص شده است.</span>
+                                    </div>
+                                    <div class="col-12 chart-3d-wrapper">
+                                        <div id="piechart_3d"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 new-report-upload-section">
+                        <h5 class="news-header"><i class="fa-regular fa-folder-open mr-2"></i>جدیدترین گزارش ها</h5>
+                        <div class="new-report-wrapper">
+                            <div class="new-report-details-container">
+                                <div class="new-report-details-card">
+                                    <div class="d-flex">
+                                        <p><i class="fa-solid fa-file"></i>گزارش مدرسه شهید عباسی از نمایندگی فراشبند توسط آقای رنجبر</p>
+                                        <a class="text-decoration-none ml-auto" href="#">
+                                            <span>مشاهده<i class="fa-regular fa-eye"></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="time-zone-report d-flex align-items-center justify-content-between">
+                                        <span><i class="fa-solid fa-calendar-days mr-2"></i>1401/8/4</span>
+                                        <span><i class="fa-solid fa-clock mr-2"></i>14:35 دقیقه</span>
+                                    </div>
+                                </div>
+                                <div class="new-report-details-card">
+                                    <div class="d-flex">
+                                        <p><i class="fa-solid fa-file"></i>گزارش مدرسه شهید عباسی از نمایندگی فراشبند توسط آقای رنجبر</p>
+                                        <a class="text-decoration-none ml-auto" href="#">
+                                            <span>مشاهده<i class="fa-regular fa-eye"></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="time-zone-report d-flex align-items-center justify-content-between">
+                                        <span><i class="fa-solid fa-calendar-days mr-2"></i>1401/8/4</span>
+                                        <span><i class="fa-solid fa-clock mr-2"></i>14:35 دقیقه</span>
+                                    </div>
+                                </div>
+                                <div class="new-report-details-card">
+                                    <div class="d-flex">
+                                        <p><i class="fa-solid fa-file"></i>گزارش مدرسه شهید عباسی از نمایندگی فراشبند توسط آقای رنجبر</p>
+                                        <a class="text-decoration-none ml-auto" href="#">
+                                            <span>مشاهده<i class="fa-regular fa-eye"></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="time-zone-report d-flex align-items-center justify-content-between">
+                                        <span><i class="fa-solid fa-calendar-days mr-2"></i>1401/8/4</span>
+                                        <span><i class="fa-solid fa-clock mr-2"></i>14:35 دقیقه</span>
+                                    </div>
+                                </div>
+                                <div class="new-report-details-card">
+                                    <div class="d-flex">
+                                        <p><i class="fa-solid fa-file"></i>گزارش مدرسه شهید عباسی از نمایندگی فراشبند توسط آقای رنجبر</p>
+                                        <a class="text-decoration-none ml-auto" href="#">
+                                            <span>مشاهده<i class="fa-regular fa-eye"></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="time-zone-report d-flex align-items-center justify-content-between">
+                                        <span><i class="fa-solid fa-calendar-days mr-2"></i>1401/8/4</span>
+                                        <span><i class="fa-solid fa-clock mr-2"></i>14:35 دقیقه</span>
+                                    </div>
+                                </div>
+                                <div class="new-report-details-card">
+                                    <div class="d-flex">
+                                        <p><i class="fa-solid fa-file"></i>گزارش مدرسه شهید عباسی از نمایندگی فراشبند توسط آقای رنجبر</p>
+                                        <a class="text-decoration-none ml-auto" href="#">
+                                            <span>مشاهده<i class="fa-regular fa-eye"></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="time-zone-report d-flex align-items-center justify-content-between">
+                                        <span><i class="fa-solid fa-calendar-days mr-2"></i>1401/8/4</span>
+                                        <span><i class="fa-solid fa-clock mr-2"></i>14:35 دقیقه</span>
+                                    </div>
+                                </div>
+                                <div class="new-report-details-card">
+                                    <div class="d-flex">
+                                        <p><i class="fa-solid fa-file"></i>گزارش مدرسه شهید عباسی از نمایندگی فراشبند توسط آقای رنجبر</p>
+                                        <a class="text-decoration-none ml-auto" href="#">
+                                            <span>مشاهده<i class="fa-regular fa-eye"></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="time-zone-report d-flex align-items-center justify-content-between">
+                                        <span><i class="fa-solid fa-calendar-days mr-2"></i>1401/8/4</span>
+                                        <span><i class="fa-solid fa-clock mr-2"></i>14:35 دقیقه</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------ End system education section ------------------ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/countMe.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- ---------------- Start Talk to support section ---------------- -->
+    <script type="text/javascript">
+      !function(){var i="cF6vCc",a=window,d=document;function g(){var g=d.createElement("script"),s="https://www.goftino.com/widget/"+i,l=localStorage.getItem("goftino_"+i);g.async=!0,g.src=l?s+"?o="+l:s;d.getElementsByTagName("head")[0].appendChild(g);}"complete"===d.readyState?g():a.attachEvent?a.attachEvent("onload",g):a.addEventListener("load",g,!1);}();
+    </script>
+    <!-- ---------------- End Talk to support section ---------------- -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

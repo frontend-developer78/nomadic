@@ -1,0 +1,36 @@
+#system{
+    .help-system-container{
+        .help-content-wrapper{
+            background-color: #fff;
+            @include margin-padding(15px,15px,15px,15px,false);
+            border-radius: 20px;
+            box-shadow: $shadow;
+            h3{
+                font: {
+                    size:$default-font-size + 3px;
+                    weight:700;
+                }
+                color: $help-header-color;
+                @include margin-padding(20px,0,20px,0);
+            }
+            strong{
+                color: $strong-heading-color;
+                margin-bottom: 30px;
+            }
+            p{
+                color: rgb(48, 48, 48);
+                font: {
+                    size:$default-font-size - 1px;
+                }
+                line-height: 30px;
+                text-align: justify;
+                margin-top: 20px;
+            }
+            img{
+                border-radius: 20px;
+                @include margin-padding(30px,0,30px,0);
+                border: 2px solid rgb(66, 0, 151);
+            }
+        }
+    }
+}

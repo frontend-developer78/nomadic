@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سامانه راهبران آموزشی</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b4735ff0d1.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/img/nomadic logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body dir="rtl" class="bg-light bg-system">
+    <!-- ------------------ Start system education section ------------------ -->
+    <section id="system" class="system-send-report">
+        <button class="menu-btn" type="button"><i class="fa-solid fa-bars"></i></button>
+        <div class="sidebar-system-container">
+            <button class="close-menu-btn" type="button"><i class="fa-regular fa-circle-xmark"></i></button>
+            <button class="anim-width-sidebar-btn" type="button"><img src="assets/img/next-button.png" alt="anim icon"></button>
+            <h5>سامانه راهبران آموزشی</h5>
+            <ul class="sidebar-system-content">
+                <li class="sidebar-items">
+                    <a class="profile-link-item" href="profile-system.html">
+                        <img src="assets/img/profile.png" alt="profile-icon">
+                        <div>
+                            <span>مهدی وارسته نیا</span>
+                            <span>کارشناس آموزش ابتدایی</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a class="active" href="dashboard-system.html">
+                        <img src="assets/img/dashboard.png" alt="dashboard-icon">
+                        <span>داشبورد</span>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a href="report-system.html">
+                        <img src="assets/img/report.png" alt="send-report-icon">
+                        <span>ثبت گزارش</span>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a href="User-information.html">
+                        <img src="assets/img/graph.png" alt="profile-content-icon">
+                        <span>اطلاعات مدارس</span>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a href="viewReport.html">
+                        <img src="assets/img/case-study.png" alt="case-study-icon">
+                        <span>مشاهده گزارش ها</span>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a href="help-system.html">
+                        <img src="assets/img/guidance.png" alt="guidance-icon">
+                        <span>راهنما</span>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a href="login.html">
+                        <img src="assets/img/exit.png" alt="exit-icon">
+                        <span>خروج</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="acount-system-container">
+            <div id="headModal" class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title"><i class="fa-solid fa-wand-magic-sparkles mr-2"></i>اطلاعیه</h5>
+                      <button type="button" class="close" onclick="closeModal()" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-fluid" src="assets/img/modal-baner-image.png" alt="modal baner image">
+                      <p><i class="fa-solid fa-shield-halved mr-2"></i>زمان ارسال آثار تا 15 دی ماه سال 1401</p>
+                      <p><i class="fa-solid fa-shield-halved mr-2"></i>شرکت در مسابقات در سه بخش تولید فیلم آموزشی، بازی سازی و ارسال مقاله های مرتبط با آموزش</p>
+                      <a class="text-decoration-none" href="https://ecf.roshd.ir/standards/">ثبت نام</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 acount-name-section">
+                        <h5 class="mb-3"><i class="fa-solid fa-signature mr-1"></i>مشخصات پرسنلی</h5>
+                        <form action="">
+                            <div class="form-section">
+                                <div class="form-group">
+                                    <label for="name-acount">نام</label>
+                                    <input id="name-acount" name="name-acount-system" type="text" disabled value="مهدی">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name-acount">نام خانوادگی</label>
+                                    <input id="name-acount" name="name-acount-system" type="text" disabled value="وارسته نیا">
+                                </div>
+                            </div>
+                            <div class="form-section">
+                                <div class="form-group">
+                                    <label for="name-acount">کد ملی</label>
+                                    <input id="name-acount" name="name-acount-system" type="text" disabled value="2284869785">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name-acount">کد پرسنلی</label>
+                                    <input id="name-acount" name="name-acount-system" type="text" disabled value="13074864">
+                                </div>
+                            </div>
+                            <div class="form-section">
+                                <div class="form-group">
+                                    <label for="name-acount">سابقه خدمت</label>
+                                    <input id="name-acount" name="name-acount-system" type="text" disabled value="15 سال">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name-acount">پست سازمانی</label>
+                                    <input id="name-acount" name="name-acount-system" type="text" disabled value="کارشناس آموزش ابتدایی">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 details-profile-system-section">
+                        <h5 class="mb-3"><i class="fa-regular fa-building mr-1"></i>شرح وظایف سازمانی</h5>
+                        <div class="details-profile-container">
+                            <ul>
+                                <li><i class="fa-brands fa-slack mr-1"></i>تهیه برنامه های لازم جهت ارتقا کمی و کیفی فعالیت های آموزشی و پرورشی</li>
+                                <li><i class="fa-brands fa-slack mr-1"></i>نظارت بر تهیه و ابلاغ بخشنامه هاو دستورالعمل مربوط به آموزش دبستانی</li>
+                                <li><i class="fa-brands fa-slack mr-1"></i>تلاش و مراقبت لازم جهت حسن اجرای طرح ها و برنامه های ابلاغی از جانب اداره کل آموزش و پرورش فارس</li>
+                                <li><i class="fa-brands fa-slack mr-1"></i>همکاری با امور اداری در مورد تهیه ابلاغ آموزگاران</li>
+                                <li><i class="fa-brands fa-slack mr-1"></i>بررسی و پیش بینی نیازمندی های مدارس ابتدایی </li>
+                                <li><i class="fa-brands fa-slack mr-1"></i>ارزشیابی مستمر از فعالیت های آموزشی و پرورشی</li>
+                                <li><i class="fa-brands fa-slack mr-1"></i>تلاش برای افزایش پوشش تحصیلی با همکاری واحد های ذیربط</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 news-system-section">
+                        <h5 class="news-header"><i class="fa-regular fa-newspaper mr-1"></i>اخبار و اطلاعیه های مهم</h5>
+                        <div class="news-system-container">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-lg-4 mb-3">
+                                        <div class="news-system-card">
+                                            <img src="assets/img/report.png" alt="news-card">
+                                            <div class="news-system-content">
+                                                <h5>امکان ویرایش گزارش</h5>
+                                                <p>راهبران آموزشی باید در ثبت گزارش خود نهایت دقت را داشته باشند زیرا پس از ثبت گزارش دیگر امکان ویرایش آن وجود نخواهد داشت و گزارش ها در اختیار کارشناسان قرار خواهد گرفت برای بررسی.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4 mb-3">
+                                        <div class="news-system-card">
+                                            <img src="assets/img/password.png" alt="news-card">
+                                            <div class="news-system-content">
+                                                <h5>تغییر رمز عبور</h5>
+                                                <p>شما می توانید رمز خود را متناسب با خواسته خود تغییر دهید اما توجه داشته باشید که رمز شما باید شامل حداقل پنج کاراکتر باشد و حتما باید شامل حروف انگلیسی نیز باشد.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4 mb-3">
+                                        <div class="news-system-card">
+                                            <img src="assets/img/case-study.png" alt="news-card">
+                                            <div class="news-system-content">
+                                                <h5>امکان مشاهده گزارشات</h5>
+                                                <p>گزارش های ثبت شده از جانب راهبران همگی ثبت شده در قسمت مشاهده گزارشات وجود خواهد داشت و شما می توانید از اولین گزارش تا آخرین آن را مشاهده کنید.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 add-content-acount mb-4">
+                        <h5 class="mb-3"><i class="fa-regular fa-address-card mr-1"></i>تکمیل اطلاعات شخصی</h5>
+                        <div class="container personal-form-container">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <form action="" autocomplete="off">
+                                        <div class="form-group">
+                                            <label for="mobile-number"><i class="fa-solid fa-phone mr-1"></i>شماره تماس</label>
+                                            <input dir="ltr" id="mobile-number" type="text" name="phone-number" placeholder="+989021112233">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email-address"><i class="fa-solid fa-envelope mr-1"></i>آدرس ایمیل</label>
+                                            <input dir="ltr" id="email-address" type="email" name="email-address" placeholder="Example@gmail.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="location"><i class="fa-solid fa-location-dot mr-1"></i>آدرس محل زندگی</label>
+                                            <input id="location" type="text" name="location">
+                                        </div>
+                                        <div class="form-container">
+                                            <div class="form-group">
+                                                <label for="shad"><i class="fa-solid fa-hashtag mr-1"></i>نام کاربری شما در شاد</label>
+                                                <input dir="ltr" id="shad" type="text" name="shad-app">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="eita"><i class="fa-solid fa-hashtag mr-1"></i>نام کاربری شما در ایتا</label>
+                                                <input dir="ltr" id="eita" type="text" name="eita-app">
+                                            </div>
+                                        </div>
+                                        <button type="submit">ثبت اطلاعات<i class="fa-solid fa-file-import ml-2"></i></button>
+                                    </form>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <img class="img-fluid" src="assets/img/personal-information-image.jpg" alt="add personal information form image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------ End system education section ------------------ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/countMe.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- ---------------- Start Talk to support section ---------------- -->
+    <script type="text/javascript">
+      !function(){var i="cF6vCc",a=window,d=document;function g(){var g=d.createElement("script"),s="https://www.goftino.com/widget/"+i,l=localStorage.getItem("goftino_"+i);g.async=!0,g.src=l?s+"?o="+l:s;d.getElementsByTagName("head")[0].appendChild(g);}"complete"===d.readyState?g():a.attachEvent?a.attachEvent("onload",g):a.addEventListener("load",g,!1);}();
+    </script>
+    <!-- ---------------- End Talk to support section ---------------- -->
+    <script>
+        'use strict';
+        let modalBox = document.getElementById('headModal');
+        modalBox.classList.add("active-modal");
+        console.log(modalBox);
+        function closeModal() {
+            modalBox.classList.remove("active-modal");
+        }
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

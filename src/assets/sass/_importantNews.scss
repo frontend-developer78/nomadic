@@ -1,0 +1,82 @@
+// important News style
+#importantNews{
+    margin-top: 100px;
+    .important-news-content{
+        padding-top: 100px;
+        position: relative;
+        &::before{
+            content: "";
+            @include position-absolute(null,-252px,-58px,null);
+            width: 300px;
+            height: 300px;
+            background: rgb(24,4,94);
+            background: radial-gradient(circle, rgba(24,4,94,1) 0%, rgba(0,86,255,1) 100%);
+            border-radius: 30% 70% 70% 30% / 30% 45% 55% 70% ;
+            z-index: -1;
+        }
+        h3{
+            color: rgb(3, 3, 136);
+            font: {
+                weight:900;
+            }
+            line-height: 40px;
+        }
+        p{
+            color: rgb(114, 7, 214);
+            font: {
+                weight:700;
+            }
+            margin-top: 20px;
+        }
+        span{
+            font: {
+                size:$default-font-size - 1px;
+            }
+            color: #6d6d6d;
+            display: block;
+            line-height: 30px;
+            margin-top: 30px;
+        }
+        a.details-new-btn{
+            font: {
+                size: $default-font-size - 1px;
+            }
+            color: rgb(245, 245, 245);
+            background-color: rgb(50, 1, 141);
+            border-radius: 5px;
+            @include margin-padding(3px,8px,3px,8px,false);
+            margin-top: 30px;
+            display: inline-block;
+            position: absolute;
+            left: 66px;
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    #importantNews{
+        .important-news-content{
+            &::before{
+                bottom: 200px;
+                right: -284px;
+            }
+        }
+    }
+}
+@media only screen and (min-width:500px) and (max-width:768px){
+    #importantNews{
+        .important-news-content{
+            &::before{
+                right: -310px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:992px){
+    #importantNews{
+        .important-news-image{
+            img{
+                margin-top: 60px;
+            }
+        }
+    }
+}

@@ -1,0 +1,144 @@
+// Start Short News section
+#shortNews{
+    margin-top: 100px;
+    position: relative;
+    &::before{
+        content: "";
+        @include position-absolute(10px,null,null,-154px);
+        width: 755px;
+        height: 411px;
+        background: linear-gradient(to left, #070070, #300045);
+        z-index: -1;
+        border-radius: 0 86px 36px 0;
+    }
+    .short-news-image{
+        position: relative;
+        img{
+            border-radius: 20% 35% 45% 18% / 30% 40% 70% 15%;
+        }
+        i.fa-xmark{
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            font: {
+                size:$default-font-size + 20px;
+            }
+            transform: rotate(20deg);
+            color: #c4c4c4;
+        }
+        i.fa-school{
+            position: absolute;
+            bottom: 20px;
+            right: 10px;
+            font: {
+                size:$default-font-size + 20px;
+            }
+            color: #c4c4c4;
+        }
+    }
+    .short-news-content{
+        padding-top: 40px;
+        position: relative;
+        i.fa-graduation-cap{
+            position: absolute;
+            bottom: -10px;
+            left: -107px;
+            font: {
+                size:$default-font-size + 100px;
+            }
+            transform: rotate(20deg);
+            color: #c4c4c47d;
+        }
+        h3{
+            font: {
+                weight:900;
+                size: $default-font-size + 8px;
+            }
+            color: rgb(255, 255, 255);
+            text-shadow: 0 0 8px rgba(0, 0, 0, 0.288);
+            margin-bottom: 30px;
+        }
+        p{
+            color: rgb(252, 209, 21);
+            font: {
+                weight:700;
+                size: $default-font-size + 2px;
+            }
+        }
+        span{
+            font: {
+                size: $default-font-size - 2px;
+            }
+            line-height: 30px;
+            color: #ececec;
+            display: block;
+        }
+        a{
+            background-color: rgb(119, 45, 238);
+            color: #fff;
+            padding: 4px 6px;
+            font: {
+                size:$default-font-size - 2px;
+            }
+            border-radius: 10px 4px 8px 9px;
+            @include transition-default(all,0.4s);
+            &:hover{
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.288);
+                transform: translateY(-4px);
+            }
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    #shortNews{
+        &::before{
+            top: 380px;
+            height: 495px;
+        }
+        .short-news-image{
+            img{
+                border-radius: 10px;
+                width: 100%!important;
+            }
+        }
+    }
+}
+@media only screen and (min-width:500px) and (max-width:768px){
+    #shortNews{
+        &::before{
+            top: 420px;
+            height: 495px;
+            width: 100%;
+            left: 0;
+        }
+        .short-news-image{
+            img{
+                border-radius: 10px;
+                width: 100%!important;
+            }
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    #shortNews{
+        &::before{
+            top: 380px;
+            height: 495px;
+            width: 100%;
+            left: 0;
+            border-radius: 0;
+        }
+        .short-news-image{
+            img{
+                border-radius: 10px;
+                width: 100%!important;
+            }
+        }
+        .short-news-content{
+            i.fa-graduation-cap{
+                left: 29px;
+                bottom: -34px;
+            }
+        }
+    }
+}

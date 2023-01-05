@@ -1,0 +1,215 @@
+#AllNews{
+    margin-top: 70px;
+    .breadcrumb-container{
+        nav{
+            ol.breadcrumb{
+                background-color: $breadcrumb-bg;
+                border-radius: 8px;
+                .breadcrumb-item{
+                    font: {
+                        size:$default-font-size - 2px;
+                    }
+                    a{
+                        color: $breadcrumb-link-color;
+                        @include transition-default(all,0.4s);
+                        &:hover{
+                            color: $breadcrumb-link-color-hover;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .box-header-new-wrapper{
+        .card-news-container{
+            overflow: hidden;
+            position: relative;
+            @include border-radius(20px,20px,20px,20px);
+            @include transition-default(all,0.4s);
+            &:hover{
+                box-shadow: $shadow;
+                transform: translateY(-4px);
+            }
+            .card-news-inner{
+                img{
+                    filter: brightness(0.8);
+                }
+                .card-news-content{
+                    @include position-absolute(null,0,20px,null);
+                    background-color: rgba(22, 1, 117, 0.664);
+                    width: 90%;
+                    @include border-radius(20px,0,0,20px);
+                    @include margin-padding(6px,6px,6px,6px,false);
+                    box-shadow: $shadow;
+                    h5{
+                        text-align: center;
+                        color: #fff;
+                        margin-top: 10px;
+                        font: {
+                            size: $default-font-size + 3px;
+                        }
+                    }
+                    p{
+                        color: #fff;
+                        @include margin-padding(10px,10px,10px,10px,false);
+                        font: {
+                            size: $default-font-size - 1px;
+                        } 
+                    }
+                }
+                .time-news{
+                    @include position-absolute(0,null,null,0);
+                    background-color: rgb(104, 0, 173);
+                    @include margin-padding(3px,7px,3px,7px,false);
+                    @include border-radius(10px,0,10px,0);
+                    span{
+                        color: #fff;
+                        font: {
+                            size:$default-font-size - 1px;
+                        }
+                    }
+                }
+            }
+        }
+        .box-news-container{
+            border-radius: 20px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: $shadow;
+            .box-card-inner{
+                a{
+                    img{
+                        height: 200px;
+                        width: 100%
+                    }
+                    .box-card-content{
+                        @include margin-padding(10px,10px,10px,10px,false);
+                        h5{
+                            color: rgb(75, 2, 158);
+                            font: {
+                                size: $default-font-size + 1px;
+                                weight:700;
+                            }
+                        }
+                        p{
+                            text-align: justify;
+                            color: rgb(160, 160, 160);
+                            font: {
+                                size: $default-font-size - 2px;
+                            } 
+                        }
+                        .time-box{
+                            @include margin-padding(0,4px,0,4px,false);
+                            @include flex(flex,center,space-between);
+                            margin: 20px 0;
+                            span{
+                                color: rgb(46, 46, 46);
+                                line-height: 10px;
+                                background-color: rgb(241, 241, 241);
+                                @include margin-padding(5px,8px,5px,8px,false);
+                                @include border-radius(20px,20px,20px,20px);
+                                font: {
+                                    size:$default-font-size - 3px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .video-card-news-container{
+            border-radius: 20px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: $shadow;
+            .video-card-news-inner{
+                .videoNews{
+                    @include section-divider(flex,50%,50%);
+                }
+                .video-card-content{
+                    position: relative;
+                    @include section-divider(flex,50%,50%);
+                    flex-direction: column;
+                    @include margin-padding(20px,20px,0,20px,false);
+                    h5{
+                        color: rgb(75, 2, 158);
+                        text-align: center;
+                        margin-bottom: 20px;
+                        line-height: 27px;
+                        text-shadow: $shadow;
+                        font: {
+                            size: $default-font-size + 3px;
+                            weight:700;
+                        }
+                    }
+                    p{
+                        text-align: justify;
+                        color: rgb(160, 160, 160);
+                        line-height: 27px;
+                        font: {
+                            size: $default-font-size - 2px;
+                        } 
+                    }
+                    a{
+                        font: {
+                            size: $default-font-size - 1px;
+                        }
+                        margin-bottom: 50px;
+                        background-color: rgb(135, 0, 168);
+                        color: #fff;
+                        text-align: center;
+                        @include margin-padding(3px,7px,3px,7px,false);
+                        @include border-radius(10px,10px,10px,10px);
+                        box-shadow: $shadow;
+                        width: 120px;
+                        @include transition-default(all,0.4s);
+                        &:hover{
+                            transform: translateY(-3px);
+                        }
+                        &:active{
+                            transform: scale(0.9);
+                        }
+                    }
+                    .time-box{
+                        // @include position-absolute(null,0,20px,null);
+                        // width: 100%;
+                        @include margin-padding(0,4px,0,4px,false);
+                        @include flex(flex,center,space-between);
+                        margin-bottom: 20px;
+                        span{
+                            color: rgb(46, 46, 46);
+                            line-height: 10px;
+                            background-color: rgb(241, 241, 241);
+                            @include margin-padding(5px,8px,5px,8px,false);
+                            @include border-radius(20px,20px,20px,20px);
+                            font: {
+                                size:$default-font-size - 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px){
+    #AllNews{
+        .box-header-new-wrapper{
+            .video-card-news-container{
+                .video-card-news-inner{
+                    display: block!important;
+                    .video-card-content{
+                        display: block!important;
+                        max-width: 100%!important;
+                        .time-box{
+                            position: relative;
+                            margin-top: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

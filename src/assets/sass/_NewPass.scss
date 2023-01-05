@@ -1,0 +1,100 @@
+// -------------- Start Generate New password section style
+.password-page{
+    background: url("../img/e-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    #NewPass{
+        margin-top: 100px;
+        .great-new-pass-section{
+            background-color: #fff;
+            @include margin-padding(20px,20px,20px,20px,false);
+            border-radius: 15px;
+            box-shadow: 5px 7px 50px rgb(0 0 0 / 48%);
+            .new-pass-container{
+                form{
+                    .great-password-header{
+                        @include margin-padding(30px,0,40px,0,false);
+                        h5{
+                            font: {
+                                size:$default-font-size + 1px;
+                                weight:700;
+                            }
+                            color: #4102b6;
+                        }
+                    }
+                    .custom-pass-group{
+                        position: relative;
+                        margin-bottom: 40px;
+                        label{
+                            background: #fff;
+                            font: {
+                                size:$default-font-size - 2px;
+                                weight:700;
+                            }
+                            color: #535353;
+                            padding: 0 15px;
+                            @include position-absolute(-13px,91px,null,null);
+                            @include transition-default(all,0.4s);
+                            i{
+                                vertical-align: -1px;
+                                color: #83a2f7;
+                            }
+                        }
+                        input{
+                            outline: none;
+                            background-color: transparent;
+                            border: 2px solid #dddddd;
+                            width: 70%;
+                            height: 48px;
+                            border-radius: 6px;
+                            @include margin-padding(0,10px,0,10px,false);
+                            @include transition-default(all,0.7s);
+                            color: rgb(53, 53, 53);
+                            font: {
+                                size:$default-font-size - 1px;
+                            }
+                        }
+                        input:focus{
+                            border: 2px solid rgba(10, 47, 167, 0.753);
+                        }
+                        .hide-pass-section{
+                            i#show-pass{
+                                @include position-absolute(16px,null,null,94px);
+                                color: #aaaaaa;
+                                font: {
+                                    size:$default-font-size - 1px;
+                                }
+                                @include transition-default(all,0.4s);
+                                &:hover{
+                                    color: #313131;
+                                }
+                            }
+                        }
+                    }
+                    .submit-pass-btn{
+                        background: transparent;
+                        outline: none;
+                        border: 2px solid rgb(20, 6, 141);
+                        padding: 3px 8px;
+                        border-radius: 5px;
+                        color: rgb(20, 6, 141);
+                        font: {
+                            size:$default-font-size + 2px;
+                            weight:700;
+                        }
+                        @include transition-default(all,0.4s);
+                        &:hover{
+                            color: #fff;
+                            background-color: rgb(12, 1, 107);
+                            box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.342);
+                        }
+                        &:active{
+                            transform: scale(0.9);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

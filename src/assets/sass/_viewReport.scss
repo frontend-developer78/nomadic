@@ -1,0 +1,279 @@
+#system{
+    .view-report-container{
+        .city-school-name-section{
+            .school-name-card{
+                a.school-name-card-inner{
+                    div{
+                        position: relative;
+                        box-shadow: $shadow;
+                        overflow: hidden;
+                        @include border-radius(0,0,20px,10px);
+                        @include transition-default(all,0.4s);
+                        &:hover{
+                            box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.4);
+                            .school-name-card-content{
+                                p{
+                                    background-color: rgb(0, 71, 54);
+                                    color: rgb(252, 252, 252);
+                                }
+                            }
+                        }
+                        .message-badge{
+                            @include position-absolute(12px,null,null,10px);
+                            background: red;
+                            color: #fff;
+                            border-radius: 20px;
+                            font: {
+                                size:$default-font-size - 2px;
+                            }
+                            @include margin-padding(3px,6px,1px,6px,false);
+                        }
+                        img{
+                            width: 100%;
+                            border-radius: 20px 10px 0 0;
+                        }
+                        .school-name-card-content{
+                            background-color: #fff;
+                            @include margin-padding(12px,10px,5px,10px,false);
+                            h5{
+                                text-align: center;
+                                color: rgb(82, 0, 136);
+                                font: {
+                                    weight:700;
+                                    size:$default-font-size + 1px;
+                                }
+                                @include margin-padding(10px,0,10px,0);
+                            }
+                            ul{
+                                margin-top: 20px;
+                                li{
+                                    @include margin-padding(0,10px,10px,0);
+                                    span{
+                                        color: rgb(56, 56, 56);
+                                        i{
+                                            color: rgb(147, 2, 167);
+                                            vertical-align: -2px;
+                                            margin-left: 7px;
+                                        }
+                                    }
+                                }
+                            }
+                            p{
+                                text-align: center;
+                                margin-top: 30px;
+                                background-color: rgb(218, 255, 246);
+                                @include margin-padding(3px,4px,3px,4px,false);
+                                @include border-radius(5px,7px,5px,7px);
+                                @include transition-default(all,0.4s);
+                                color: rgb(2, 82, 51);
+                                font: {
+                                    size:$default-font-size - 2px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .exclusive-school-card{
+                a.school-name-card-inner{
+                    div.exclusive-school-wrapper{
+                        display: flex;
+                        border-radius: 20px;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 40px;
+                            height: 110%;
+                            top: -10px;
+                            right: 393px;
+                            transform: rotate(6deg);
+                            z-index: 2;
+                            background-color: #fff;
+                        }
+                        span{
+                            right: 20px;
+                            left: unset;
+                            width: 92px;
+                        }
+                        img{
+                            @include section-divider(flex,40%,40%);
+                            @include border-radius(0,20px,20px,0);
+                        }
+                        .school-name-card-content{
+                            @include section-divider(flex,60%,60%);
+                            flex-direction: column;
+                            @include border-radius(20px,0,0,20px);
+                            padding-right: 40px;
+                        }
+                    }
+                }
+            }
+        }
+        .view-from-report{
+            margin-top: 40px;
+            background: #fff;
+            box-shadow: $shadow;
+            @include margin-padding(20px,20px,20px,20px,false);
+            @include border-radius(14px,14px,14px,14px);
+            .veiw-form-container{
+                h5{
+                    @include margin-padding(0,10px,30px,0);
+                    @include margin-padding(0,10px,0,0,false);
+                    color: $serach-report-header-color;
+                    border-right: 3px solid rgb(235, 1, 40);
+                    font: {
+                        size:$default-font-size + 2px;
+                        weight:700;
+                    }
+                }
+                #form-search-report{
+                    .search-card-wrapper{
+                        position: relative;
+                        label{
+                            // @include position-absolute()
+                            background-color: #fff;
+                            color: #11005c;
+                            font: {
+                                size:$default-font-size - 2px;
+                                weight:700;
+                            }
+                        }
+                        input{
+                            @include margin-padding(4px,12px,4px,7px,false);
+                            outline: none;
+                            box-shadow: none;
+                            border: 1px solid #c4c4c4;
+                            @include border-radius(8px,8px,8px,8px);
+                            color: #1a1a1a;
+                            font: {
+                                size:$default-font-size - 1px;
+                            }
+                            // @include transition-default(all,0.4s);
+                            &:focus{
+                                border: 2px solid rgb(61, 0, 141);
+                            }
+                        }
+                        select#name-agency{
+                            @include margin-padding(4px,12px,4px,7px,false);
+                            outline: none;
+                            box-shadow: none;
+                            border: 1px solid #c4c4c4;
+                            @include border-radius(8px,8px,8px,8px);
+                        }
+                    }
+                    #form-search-btn{
+                        margin-top: 20px;
+                        border: none;
+                        outline: none;
+                        @include margin-padding(3px,12px,3px,12px,false);
+                        background: #11005c;
+                        color: #fff;
+                        border-radius: 7px;
+                        @include transition-default(all,0.4s);
+                        font: {
+                            size:$default-font-size - 1px;
+                        }
+                        i{
+                            vertical-align: -2px;
+                        }
+                        &:hover{
+                            box-shadow: $shadow;
+                            transform: translateY(-1px);
+                        }
+                        &:active{
+                            transform: scale(0.9);
+                        }
+                    }
+                }
+            }
+        }
+        .report-view-box-container{
+            margin-top: 30px;
+            .report-view-box-card{
+                .report-view-box-inner{
+                    background: #fff;
+                    @include margin-padding(15px,7px,15px,7px,false);
+                    border-radius: 20px;
+                    box-shadow: $shadow;
+                    @include transition-default(all,0.4s);
+                    &:hover{
+                        transform: translateY(-4px);
+                        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+                    }
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        @include margin-padding(0,10px,0,10px);
+                    }
+                    .report-view-box-content{
+                        h6{
+                            color: #33005c;
+                            font: {
+                                size:$default-font-size + 1px;
+                                weight:700;
+                            }
+                        }
+                        p{
+                            color: #4b4b4b;
+                            font: {
+                                size:$default-font-size - 2px;
+                            }
+                        }
+                        .time-report{
+                            .time-box-card{
+                                span{
+                                    color: #313131;
+                                    i{
+                                        margin:0 6px;
+                                        vertical-align: -2px;
+                                        color: #f76f14;
+                                    }
+                                }
+                            }
+                            .rate-report-box{
+                                margin-left: 10px;
+                                i{
+                                    margin-right: 2px;
+                                    font: {
+                                        size:$default-font-size + 1px;
+                                    }
+                                    color: rgb(236, 202, 5);
+                                }
+                            }
+                        }
+                        .media{
+                            border-top: 1px dashed rgb(177, 177, 177);
+                            padding-top: 20px;
+                            .media-body{
+                                h5{
+                                    font: {
+                                        size:$default-font-size + 1px;
+                                        weight:700;
+                                    }
+                                    color: $media-head-color;
+                                }
+                                span{
+                                    font: {
+                                        size:$default-font-size - 2px;
+                                    }
+                                    color: #979797;
+                                    margin-bottom: 15px;
+                                    display: block;
+                                }
+                                p{
+                                    font: {
+                                        size:$default-font-size - 2px;
+                                    }
+                                    text-align: justify;
+                                    line-height: 30px;
+                                    color: #353535;
+                                    @include margin-padding(0,0,0,22px,false);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+// ------------------ Start Educational announcements style
+#announcements{
+    margin-top: 100px;
+    .educational-announcement-header{
+        h5{
+            font: {
+                size:$default-font-size + 2px;
+                weight:700;
+            }
+            color: $announcement-header-color;
+            border-right: 4px solid red;
+            padding-right: 10px;
+        }
+    }
+    .announcement-card-container{
+        padding: 0 20px;
+        .announcement-card-inner{
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid #efefef;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+            .card-body{
+                h5{
+                    font: {
+                        size: $default-font-size + 1px;
+                        weight:700;
+                    }
+                    color: rgb(56, 1, 145);
+                }
+                p{
+                    font: {
+                        size:$default-font-size - 1px;
+                    }
+                    line-height: 27px;
+                    color: #303030;
+                }
+            }
+            .blockquote{
+                p{
+                    font: {
+                        size:$default-font-size - 1px;
+                        weight:700;
+                    }
+                    line-height: 27px; 
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

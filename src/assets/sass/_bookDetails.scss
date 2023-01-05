@@ -1,0 +1,21 @@
+#newsDetails{
+    .details-news-sidebar-content{
+        .details-news-sidebar-content-inner{
+            .news-content-container{
+                audio{
+                    width: 100%;
+                    margin-top: 20px;
+                    box-shadow: $shadow;
+                    border-radius: 50px
+                }
+                .image-books-container{
+                    @include flex(flex,center,space-around);
+                    background-color: transparent;
+                    img{
+                        border-radius: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,289 @@
+// ------------- Start dashbord style
+#system{
+    .acount-system-container{
+        .acount-name-section{
+            .school-card-section{
+                .school-card{
+                    margin-bottom: 20px;
+                    .school-card-inner{
+                        background-color: $school-card-bg;
+                        @include margin-padding(9px,9px,9px,9px,false);
+                        border-radius: 7px;
+                        box-shadow: $school-card-shadow;
+                        @include transition-default(all,0.4s);
+                        &:hover{
+                            transform: translateY(-6px);
+                            box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.3);
+                        }
+                        h4{
+                            font: {
+                                size:$default-font-size + 1px;
+                                weight:700;
+                            }
+                            text-align: center;
+                            @include margin-padding(20px,0,30px,0);
+                            color: #32047a;
+                        }
+                        span{
+                            font: {
+                                size:$default-font-size - 2px;
+                            }
+                            margin: 10px 0;
+                            display: block;
+                            text-align: center;
+                            color: #575757;
+                            strong{
+                                color: #222222;
+                                background: gold;
+                                padding: 2px 4px;
+                                border-radius: 20px;
+                                font: {
+                                    size:$default-font-size - 3px;
+                                }
+                            }
+                        }
+                        p{
+                            font: {
+                                size: $default-font-size - 2px;
+                            }
+                            color: #424242;
+                            text-align: center;
+                            strong{
+                                background: rgb(13, 11, 173);
+                                color: rgb(233, 233, 233);
+                                padding: 2px 4px;
+                                border-radius: 4px;
+                                font: {
+                                    size:$default-font-size - 3px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .exclusive-acount-section{
+            margin-top: 20px;
+            padding: 30px;
+            h5{
+                font: {
+                    size:$default-font-size + 4px;
+                    weight:700;
+                }
+                border-right: 4px solid red;
+                @include margin-padding(0,6px,0,0,false);
+            }
+            .exclusive-acount-card{
+                background-color: #fff;
+                border-radius: 10px;
+                @include margin-padding(20px,20px,20px,20px,false);
+                box-shadow: $shadow;
+                position: relative;
+                overflow: hidden;
+                img{
+                    @include position-absolute(0,null,null,0);
+                    width: 262px;
+                    height: 262px;
+                }
+                &::before{
+                    content: '';
+                    @include position-absolute(-6px,null,null,240px);
+                    width: 50px;
+                    height: 120%;
+                    background-color: rgb(255, 255, 255);
+                    z-index: 1;
+                    transform: rotate(351deg);
+                }
+                h4{
+                    color: #32047a;
+                    margin-bottom: 20px;
+                    font: {
+                        weight:700;
+                        size:$default-font-size + 5px;
+                    }
+                }
+                ul{
+                    li{
+                        @include margin-padding(0,0,10px,0,false);
+                        span:nth-child(1){
+                            font: {
+                                weight:700;
+                                size:$default-font-size;
+                            }
+                            color: #024163;
+                        }
+                        span:nth-child(2){
+                            font: {
+                                size:$default-font-size - 1px;
+                            }
+                            color: #1d1d1d;
+                        }
+                    }
+                }
+            }
+        }
+        .statistic-report-section{
+            margin-top: 70px;
+            .statistic-report-card-inner{
+                margin-bottom: 20px;
+                @include margin-padding(20px,20px,20px,20px,false);
+                background: #32047a;
+                background: linear-gradient(to right, #1de194, #0b3f19);
+                border-radius: 10px;
+                position: relative;
+                overflow: hidden;
+                @include transition-default(all,0.3s);
+                box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3);
+                h5{
+                    color: #fff;
+                    font: {
+                        size:$default-font-size + 1px;
+                    }
+                    margin-top: 10px;
+                }
+                span{
+                    font: {
+                        size: $default-font-size + 15px;
+                        weight: 700;
+                    }
+                    color: rgb(236, 236, 236);
+                }
+                img{
+                    @include position-absolute(14px,null,null,-39px);
+                    width: 90px;
+                    height: 90px;
+                    transform: rotate(5deg);
+                    filter: opacity(0.7);
+                    @include transition-default(all,0.5s);
+                }
+                &:hover{
+                    img{
+                        transform: translateX(40px) scale(0.8);
+                    }
+                }
+            }
+            .report-card-bg-2{
+                background: linear-gradient(to right, #58949c, #125c84);
+            }
+            .report-card-bg-3{
+                background: linear-gradient(to right, #d702ea, #820350);
+            }
+            .report-card-bg-4{
+                background: linear-gradient(to right, #760307, #ef2b6b);
+            }
+        }
+        .chart-school-section{
+            .chart-inner{
+                background: #fff;
+                margin-top: 30px;
+                @include margin-padding(30px,20px,20px,20px,false);
+                border-radius: 20px;
+                box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3);
+                overflow: hidden;
+                .chart-header-content{
+                    h3{
+                        color: #02611b;
+                        text-align: center;
+                        margin-bottom: 30px;
+                        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+                        font: {
+                            weight:700;
+                            size:$default-font-size + 3px;
+                        }
+                    }
+                    p{
+                        line-height: 30px;
+                        strong{
+                            color: #32047a;
+                        }
+                    }
+                }
+                .chart-3d-wrapper{
+                   #piechart_3d{
+                    max-width: 100%;
+                    max-height: 500px;
+                   } 
+                }
+            }
+        }
+        .new-report-upload-section{
+            margin-top: 70px;
+            h5{
+                font: {
+                    weight:900;
+                }
+                color: #2c2c2c;
+                margin-right: 20px;
+                @include margin-padding(0,6px,0,0,false);
+                border-right: 4px solid red;
+            }
+            .new-report-wrapper{
+                padding: 40px 36px 10px 36px;
+                margin: 30px 20px;
+                border-radius: 22px;
+                box-shadow: 3px 5px 8px #00000029;
+                background: #fff;
+                .new-report-details-container{
+                    .new-report-details-card{
+                        margin-bottom: 20px;
+                        border-bottom: 1px dotted #b6b6b6;
+                        div{
+                            p{
+                                font: {
+                                    size:$default-font-size - 1px;
+                                }
+                                color: #313131;
+                                i{
+                                    vertical-align: -2px;
+                                    margin-left: 5px;
+                                    color: #9706d1;
+                                    font: {
+                                        size:$default-font-size + 2px;
+                                    }
+                                }
+                            }
+                            a{
+                                &:hover{
+                                    span{
+                                        color: #fc4242;
+                                        i{
+                                            color: #f10894
+                                        }
+                                    }
+                                }
+                                span{
+                                    @include transition-default(all,0.4s);
+                                    font: {
+                                        size:$default-font-size - 2px;
+                                    }
+                                    color: rgb(155, 155, 155);
+                                    i{
+                                        @include transition-default(all,0.4s);
+                                        vertical-align: -2px;
+                                        color: #2c2c2c;
+                                        margin-right: 4px;
+                                        font: {
+                                            weight:700;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .time-zone-report{
+                            span{
+                                font: {
+                                    size:$default-font-size - 2px;
+                                }
+                                color: #585858;
+                                padding-bottom: 6px;
+                                i{
+                                    color: #058d82;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

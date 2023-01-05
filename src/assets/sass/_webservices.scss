@@ -1,0 +1,163 @@
+// ----------------- Start web services style
+#webservices{
+    margin-top: 150px;
+    height: 300px;
+    overflow: hidden;
+    background: url("../img/webservices-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    @include margin-padding(30px,0,30px,0,false);
+    @include transition-default(all,0.4s);
+    position: relative;
+    .webservices-btn{
+        border: none;
+        outline: none;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        @include position-absolute(null,null,23px,43px);
+        background-color: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.24);
+        @include transition-default(all,0.4s);
+        z-index: 2;
+        &:hover{
+            background-color: #f0f0f0;
+            color: rgb(106, 11, 184);
+            transform: translateY(-4px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.39);
+        }
+    }
+    .web-services-header{
+        h5{
+            font: {
+                weight: 700;
+            }
+            color: $web-services-header-color;
+            background: #e1ddf3;
+            padding: 3px 5px;
+            border-radius: 10px;
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    .web-services-card-section{
+        margin-bottom: 20px;
+        a{
+            .web-services-card-inner{
+                width: 300px;
+                overflow: hidden;
+                @include margin-padding(40px,20px,20px,20px,false);
+                border: 1px solid rgb(230, 230, 230);
+                @include border-radius(10px,10px,10px,10px);
+                box-shadow: 0 7px 8px -6px #555;
+                background-color: rgb(250, 250, 250);
+                position: relative;
+                @include transition-default(all,0.4s);
+                &:hover{
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 20px rgba(28, 1, 54, 0.226);
+                    &::before{
+                        background-color: rgba(91, 158, 245, 0.082);
+                        animation: rotate-card-border 10s linear infinite;
+                        @keyframes rotate-card-border {
+                            100%{
+                                transform: rotate(360deg);
+                            }
+                        }
+                    }
+                }
+                &::before{
+                    content: '';
+                    width: 82px;
+                    height: 82px;
+                    border: 1px dashed rgb(1, 1, 90);
+                    border-radius: 100%;
+                    @include position-absolute(25px,86px,null,null);
+                }
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+                p{
+                    margin-top: 40px;
+                    font: {
+                        size: $default-font-size - 1px;
+                        weight: 700;
+                    }
+                    color: rgb(64, 3, 121);
+                }
+            }
+        }
+    }
+}
+.active-webservices{
+    height: 530px!important;
+    .webservices-btn{
+        transform: rotate(180deg);
+    }
+}
+@media only screen and (min-width:992px) and (max-width:1200px){
+    #webservices{
+        .web-services-card-section{
+            a{
+                .web-services-card-inner{
+                    &::before{
+                        @include position-absolute(25px,62px,null,null);
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:768px) and (max-width:992px){
+    #webservices{
+        .web-services-card-section{
+            a{
+                .web-services-card-inner{
+                    &::before{
+                        @include position-absolute(25px,108px,null,null);
+                    }
+                }
+            }
+        }
+    }
+    .active-webservices{
+        height: 959px !important;
+    }
+    
+}
+@media only screen and (min-width:575px) and (max-width:768px){
+    #webservices{
+        .web-services-card-section{
+            a{
+                .web-services-card-inner{
+                    &::before{
+                        @include position-absolute(25px,77px,null,null);
+                    }
+                }
+            }
+        }
+    }
+    .active-webservices{
+        height: 954px !important;
+    }
+}
+@media only screen and (max-width:575px){
+    #webservices{
+        .web-services-card-section{
+            a{
+                .web-services-card-inner{
+                    &::before{
+                        @include position-absolute(25px,108px,null,null);
+                    }
+                }
+            }
+        }
+    }
+    .active-webservices{
+        height: 1781px !important;
+    }
+}

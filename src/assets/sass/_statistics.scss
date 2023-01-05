@@ -1,0 +1,83 @@
+// ------------------ Start statistics style
+#statistics{
+    margin-top: 100px;
+    position: relative;
+    position: relative;
+    &::before{
+        content: '';
+        @include position-absolute(83px,null,null,-125px);
+        width: 500px;
+        height: 200px;
+        background: linear-gradient(to left, #05145e, #aa17f1, #3a0091);
+        z-index: -1;
+        border-radius: 0 60px 20px 0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    &::after{
+        content: '';
+        @include position-absolute(-40px,-125px,null,0);
+        width: 400px;
+        height: 200px;
+        background: linear-gradient(to right, #5266af, #53004b);
+        z-index: -1;
+        border-radius: 60px 0 0 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.233);
+    }
+    .statistics-container{
+        @include margin-padding(20px,20px,20px,20px,false);
+        border-radius: 40px 20px 15px 20px;
+        background: rgba(255, 255, 255, 0.54);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.295);
+        backdrop-filter: blur(8.2px);
+        -webkit-backdrop-filter: blur(8.2px);
+        .counter-statistics-wrapper{
+            .counter-statistics-inner{
+                img{
+                    width: 80px;
+                    height: 80px;
+                    cursor: pointer;
+                    @include transition-default(all,0.4s);
+                    &:hover{
+                        filter: drop-shadow(0 0 10px rgba(0,0,0,0.2));
+                        transform: translateY(-2px) scale(0.9);
+                    }
+                }
+                .counter{
+                    font: {
+                        size:$default-font-size + 7px;
+                        weight:700;
+                    }
+                    color: rgb(92, 3, 119);
+                }
+                p{
+                    font: {
+                        size:$default-font-size + 2px;
+                        weight:700;
+                    }
+                    color: rgb(31, 31, 31);
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:768px){
+    #statistics{
+        &::before{
+            content: '';
+            width: 100%;
+            left: 0;
+        }
+        &::after{
+            content: '';
+            width: 100%;
+            left: 0;
+        }
+        .statistics-container{
+            .counter-statistics-wrapper{
+                .counter-statistics-inner:nth-child(3){
+                    display: none!important;
+                }
+            }
+        }
+    }
+}

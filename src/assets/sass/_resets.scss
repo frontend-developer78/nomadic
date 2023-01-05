@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,300&display=swap');
+
+@font-face{
+    font-family: IRANYekanWebMedium;
+    src: url("../fonts/IRANYekanWebMedium.eot") format("eot"),
+    url("../fonts/IRANYekanWebMedium.ttf") format("truetype"),
+    url("../fonts/IRANYekanWebMedium.woff") format("woff"),
+    url("../fonts/IRANYekanWebMedium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: iranyekanwebmediumfanum;
+    src: url("../fonts/iranyekanwebmediumfanum.eot") format("eot"),
+    url("../fonts/iranyekanwebmediumfanum.ttf") format("truetype"),
+    url("../fonts/iranyekanwebmediumfanum.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: IRANYekanWebLight;
+    src: url("../fonts/IRANYekanWebLight.eot") format("eot"),
+    url("../fonts/IRANYekanWebLight.ttf") format("truetype"),
+    url("../fonts/IRANYekanWebLight.woff") format("woff"),
+    url("../fonts/IRANYekanWebLight.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+
+*,
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: iranyekanwebmediumfanum; 
+}
+body{
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul, li, ol{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body::-webkit-scrollbar {
+    width: 4px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(61, 8, 187);
+    border-radius: 10px;
+    width: 5px;
+}
+body::-webkit-scrollbar-track {
+    background-color: rgb(230, 230, 230);
+}
+*::selection{
+    background-color: rgb(102, 7, 190);
+    color: #fff;
+}

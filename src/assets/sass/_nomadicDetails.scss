@@ -1,0 +1,32 @@
+#nomadicDetails{
+    margin-top: 70px;
+    .nomadic-details-image-header{
+        img{
+            border-radius: 20px;
+            box-shadow: $shadow
+        }
+    }
+    .nomadic-details-content{
+        background-color: rgb(247, 247, 247);
+        border-radius: 20px;
+        margin-top: 20px;
+        border: 1px dotted #7e7e7e;
+        @include margin-padding(20px,20px,20px,20px,false);
+        h2{
+            color: rgb(55, 1, 155);
+            margin-bottom: 20px;
+            font: {
+                weight:700;
+                size:$default-font-size + 8px;
+            }
+        }
+        p{
+            color: rgb(41, 41, 41);
+            text-align: justify;
+            font: {
+                size:$default-font-size - 1px;
+            }
+            line-height: 33px;
+        }
+    }
+}

@@ -1,0 +1,221 @@
+#system{
+    .see-report-school-container{
+        .school-report-box-wrapper{
+            .school-report-box-inner{
+                position: relative;
+                background: $introduction-bg;
+                @include border-radius(20px,20px,20px,20px);
+                box-shadow: $shadow;
+                h4{
+                    color: rgb(87, 6, 218);
+                    font: {
+                        weight:700;
+                    }
+                    text-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
+                    margin-bottom: 30px;
+                }
+                form{
+                    label{
+                        font: {
+                            size:$default-font-size - 2px;
+                            weight:700;
+                        }
+                        color: rgb(31, 31, 31);
+                        margin-bottom: 12px;
+                    }
+                    input{
+                        background: rgb(250, 250, 250);
+                        border-radius: 6px;
+                        border: none;
+                        color: rgb(37, 37, 37);
+                        font: {
+                            size:$default-font-size - 1px;
+                        }
+                        border-bottom: 2px solid rgb(56, 1, 160);
+                    }
+                }
+                .school-report-box-content{
+                    h3{
+                        font: {
+                            size:$default-font-size + 2px;
+                            weight:700;
+                        }
+                        color: rgb(34, 34, 34);
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        font: {
+                            size:$default-font-size - 1px;
+                        }
+                        line-height: 34px;
+                        text-align: justify;
+                        padding: 20px;
+                        color: rgb(44, 44, 44);
+                    }
+                }
+                .feedback-container{
+                    border-top: 1px dashed rgb(165, 165, 165);
+                    padding-top: 20px;
+                    h6{
+                        font: {
+                            size:$default-font-size + 2px;
+                            weight:700;
+                        }
+                        color: rgb(38, 0, 109);
+                    }
+                    form{
+                        .form-group{
+                            #feedbackTextarea{
+                                margin-top: 20px;
+                                border-radius: 20px;
+                                box-shadow: none;
+                                @include margin-padding(5px,10px,0,10px,false);
+                                font: {
+                                    size:$default-font-size - 1px;
+                                }
+                                color: rgb(36, 36, 36);
+                                border: 1px solid rgb(224, 224, 224);
+                                @include transition-default(all,0.4s);
+                                &:focus{
+                                    border:2px solid rgb(66, 1, 139);
+                                }
+                            }
+                        }
+                        .feedback-rating-container{
+                            @include margin-padding(10px,3px,3px,10px,false);
+                            .feedback-rating-inner{
+                                h5{
+                                    font: {
+                                        size:$default-font-size + 1px;
+                                        weight:700;
+                                    }
+                                    color: $feedback-rating-header;
+                                }
+                                .rating{
+                                    display: flex;
+                                    width: 100%;
+                                    align-items: end;
+                                    height: 150px;
+                                    /* background-color: #ccc; */
+                                    overflow: hidden;
+                                    position: relative;
+                                    input{
+                                        display: none;
+                                    }
+                                    input:checked ~ label,
+                                    input:checked ~ label ~ label{
+                                        background-image: url("../img/star-2.svg");
+                                    }
+                                    input:not(:checked) ~ label:hover,
+                                    input:not(:checked) ~ label:hover ~ label{
+                                        background-image: url("../img/star-3.svg");
+                                    }
+                                    label{
+                                        cursor: pointer;
+                                        width: 40px;
+                                        height: 40px;
+                                        background-image: url("../img/star-1.svg");
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                        background-size: 76%;
+                                        transition: 0.3s;
+                                    }
+                                    .emoji-wrapper{
+                                        width: 100%;
+                                        text-align: center;
+                                        height: 100px;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        overflow: hidden;
+                                        .emoji{
+                                            display: flex;
+                                            padding-right: 62px;
+                                            flex-direction: column;
+                                            transition: 0.3s;
+                                            img{
+                                                margin: 15px 0;
+                                                width: 70px;
+                                                height: 70px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .rating-0{
+                                    filter: grayscale(100%);
+                                }
+                                #rating-1:checked ~ .emoji-wrapper > .emoji {
+                                    transform: translateY(-100px);
+                                }
+                                #rating-2:checked ~ .emoji-wrapper > .emoji {
+                                    transform: translateY(-200px);
+                                }
+                                #rating-3:checked ~ .emoji-wrapper > .emoji {
+                                    transform: translateY(-300px);
+                                }
+                                #rating-4:checked ~ .emoji-wrapper > .emoji {
+                                    transform: translateY(-400px);
+                                }
+                                #rating-5:checked ~ .emoji-wrapper > .emoji {
+                                    transform: translateY(-500px);
+                                }
+                            }
+                        }
+                        button{
+                            width: 100%;
+                            @include margin-padding(4px,7px,4px,7px,false);
+                            border: none;
+                            @include border-radius(6px,6px,6px,6px);
+                            background-color: rgb(2, 38, 134);
+                            color: #fff;
+                            @include transition-default(all,0.4s);
+                            &:hover{
+                                background-color: rgb(16, 68, 212);
+                                transform: translateY(-3px);
+                                box-shadow: $shadow;
+                            }
+                            &:active{
+                                transform: scale(0.9);
+                            }
+                        }
+                    }
+                }
+                button#download-report-btn{
+                    @include position-absolute(30px,null,null,20px);
+                    border: none;
+                    outline: none;
+                    background-color: rgb(45, 4, 121);
+                    color: #fff;
+                    @include margin-padding(3px,6px,3px,6px,false);
+                    @include border-radius(5px,5px,5px,5px);
+                    @include transition-default(all,0.4s);
+                    font: {
+                        size:$default-font-size - 2px;
+                    }
+                    &:active{
+                        transform: scale(0.9);
+                    }
+                    &:hover{
+                        transform: translateY(-3px);
+                        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.199);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:992px){
+    #system{
+        .see-report-school-container{
+            .school-report-box-wrapper{
+                .school-report-box-inner{
+                    button{
+                        position: static!important;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

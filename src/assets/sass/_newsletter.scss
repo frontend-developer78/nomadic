@@ -1,0 +1,93 @@
+// ------------ Start newsletter section
+#newsletters{
+    margin-top: 100px;
+    .newsletters-wrapper{
+        @include flex(flex,center,center);
+        flex-direction: column;
+        h5{
+            color: $newsletters-header-color;
+            font: {
+                size:$default-font-size + 8px;
+                weight:900;
+            }
+            margin-bottom: 20px;
+        }
+        span{
+            font: {
+                size:$default-font-size - 1px;
+            }
+            color: rgb(36, 36, 36);
+        }
+        form{
+            position: relative;
+            input{
+                width: 589px;
+                border: 1px solid #d9d9d9;
+                border-radius: 20px;
+                padding: 7px 15px;
+                box-shadow: 0 0 8px #0000000d;
+                outline: none;
+                @include transition-default(all,0.4s);
+                font: {
+                    size:$default-font-size - 1px;
+                }
+                &:focus{
+                    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.295);
+                }
+                &::placeholder{
+                    font: {
+                        size:$default-font-size - 2px;
+                    }
+                    color: #969696;
+                }
+            }
+            p{
+                opacity: 0;
+                margin-top: 6px;
+                font: {
+                    size:$default-font-size - 1px;
+                }
+                color: #3b3b3b;
+                @include transition-default(all,0.4s);
+            }
+            input[type=email]:invalid ~ p{
+                opacity: 1;
+                color: rgb(247, 53, 53);
+            }
+            input[type=email]:valid ~ p{
+                opacity: 0;
+            }
+            button{
+                @include position-absolute(0,null,null,-20px);
+                border: none;
+                outline: none;
+                background: #022f83;
+                color: #fff;
+                padding: 7px 17px;
+                border-radius: 23px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:992px){
+    #newsletters{
+        .newsletters-wrapper{
+            form{
+                input{
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    #newsletters{
+        .newsletters-wrapper{
+            form{
+                input{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

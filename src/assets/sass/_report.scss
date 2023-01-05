@@ -1,0 +1,228 @@
+#system{
+    .report-container{
+        padding-top: 50px;
+        .record-report-section{
+            .report-header-content{
+                position: relative;
+                overflow: hidden;
+                margin-bottom: 40px;
+                @include margin-padding(20px,20px,20px,20px,false);
+                /* From https://css.glass */
+                background: rgba(255, 255, 255, 0.644);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.301);
+                backdrop-filter: blur(4.1px);
+                -webkit-backdrop-filter: blur(4.1px);
+                border: 1px solid rgba(255, 255, 255, 0.09);
+                img{
+                    width: 300px;
+                    height: 300px;
+                    @include position-absolute(0,null,null,0);
+                }
+                h3{
+                    font: {
+                        size: $default-font-size + 3px;
+                        weight: 700;
+                    }
+                    color: #4b0188;
+                    margin-bottom: 20px;
+                }
+                .list-report-content{
+                    ul{
+                        li{
+                            margin-bottom: 20px;
+                            font: {
+                                size: $default-font-size - 1px;
+                            }
+                            color: rgb(49, 49, 49);
+                            i{
+                                color: #d60454
+                            }
+                        }
+                    }
+                }
+            }
+            form{
+                .form-group-container{
+                    @include margin-padding(20px,20px,20px,20px,false);
+                    background-color: #fff;
+                    border-radius: 20px;
+                    margin-bottom: 20px;
+                    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
+                    h5{
+                        font: {
+                            size:$default-font-size + 1px;
+                            weight: 700;
+                        }
+                        margin-bottom: 30px;
+                        color: $header-report-form-color;
+                        i{
+                            vertical-align: -2px;
+                            color: rgb(120, 6, 214);
+                        }
+                    }
+                    h5.time-header{
+                        padding-top: 20px;
+                        border-top: 1px dashed #bebebe;
+                    }
+                    .form-group-inner{
+                        .form-group{
+                            label{
+                                font: {
+                                    size:$default-font-size - 1px;
+                                }
+                                margin-right: 10px;
+                            }
+                            .form-control{
+                                @include margin-padding(4px,8px,4px,8px,false);
+                                width: 100%;
+                                height: 40px;
+                                box-shadow: none;
+                                border: 1px solid #e2e2e2;
+                                border-radius: 8px;
+                                @include transition-default(all,0.4s);
+                                font: {
+                                    size:$default-font-size - 2px;
+                                }
+                                &:focus{
+                                    border: 1px solid #4b0188;
+                                    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
+                                }
+                            }
+                        }
+                    }
+                }
+                .form-editor-group{
+                    .report-name{
+                        width: 100%;
+                        outline: none;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 8px;
+                        margin-bottom: 20px;
+                        @include margin-padding(6px,8px,6px,8px,false);
+                        @include transition-default(all,0.4s);
+                        &:focus{
+                            border-color: rgb(84, 3, 160);
+                            box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
+                        }
+                    }
+                    #trix-toolbar-1{
+                        .trix-button-row{
+                            border: 1px solid #c5c5c5;
+                            @include margin-padding(10px,10px,0,10px,false);
+                            border-radius: 10px 10px 0 0;
+                            span{
+                                margin-right: 8px;
+                                border: 1px solid #e5e5e5;
+                                padding: 6px;
+                                button{
+                                    border-bottom: none;
+                                    border-left: 1px solid #d3d3d3;
+                                }
+                            }
+                            .trix-button-group--file-tools{
+                                button{
+                                    border: none;
+                                }
+                            }
+                            .trix-button-group-spacer{
+                                border: none;
+                            }
+                        }
+                    }
+                    trix-editor{
+                        height: 500px;
+                        overflow-y: scroll;
+                        &::-webkit-scrollbar {
+                            width: 4px;
+                        }
+                        &::-webkit-scrollbar-thumb {
+                            background-color: rgb(206, 2, 97);
+                            border-radius: 10px;
+                            width: 5px;
+                        }
+                        &::-webkit-scrollbar-track {
+                            background-color: rgb(230, 230, 230);
+                        }
+                        border-radius: 0 0 10px 10px;
+                        border: 1px solid #c5c5c5;
+                        @include transition-default(all,0.4s);
+                        &:focus{
+                            border: 1px solid #5c03a5;
+                        }
+                    }
+                    .send-report-container{
+                        margin-top: 30px;
+                        button{
+                            font: {
+                                size:$default-font-size + 2px;
+                                weight:700;
+                            }
+                            color: #4b0188;
+                            margin-top: 20px;
+                            width: 100%;
+                            height: 40px;
+                            outline: none;
+                            border-radius: 10px;
+                            border: 1px solid #cecece;
+                            background-color: transparent;
+                            @include transition-default(all,0.4s);
+                            i{
+                                @include transition-default(all,0.4s);
+                            }
+                            &:focus{
+                                background-color: #4b0188;
+                                color: #fff;
+                                transform: scale(0.9);
+                            }
+                            &:hover{
+                                background-color: #4b0188;
+                                color: #fff;
+                                box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
+                                i{
+                                    transform: translateX(6px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .alert-box-section{
+            .alert{
+                border-radius: 20px;
+                box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
+                a{
+                    font: {
+                        size: $default-font-size - 1px;
+                    }
+                    background-color: #025f07;
+                    border-radius: 4px;
+                    @include margin-padding(3px,5px,3px,5px,false);
+                    color: #fff;
+                    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
+                    i{
+                        vertical-align: -2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    #system{
+        .report-container{
+            .record-report-section{
+                .report-header-content{
+                    img{
+                        position: relative!important;
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

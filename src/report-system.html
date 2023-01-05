@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت گزارش | سامانه راهبران آموزشی</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+    <link rel="stylesheet" href="assets/css/datepicker.css">
+    <link rel="stylesheet" href="assets/css/persianDatepicker-default.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/trix.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b4735ff0d1.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/img/nomadic logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body dir="rtl" class="bg-light bg-system">
+    <!-- ------------------ Start system education section ------------------ -->
+    <section id="system" class="system-send-report">
+        <button class="menu-btn" type="button"><i class="fa-solid fa-bars"></i></button>
+        <div class="sidebar-system-container">
+            <button class="close-menu-btn" type="button"><i class="fa-regular fa-circle-xmark"></i></button>
+            <button class="anim-width-sidebar-btn" type="button"><img src="assets/img/next-button.png" alt="anim icon"></button>
+            <h5>سامانه راهبران آموزشی</h5>
+            <ul class="sidebar-system-content">
+                <li class="sidebar-items">
+                    <a class="profile-link-item" href="profile-system.html">
+                        <img src="assets/img/profile.png" alt="profile-icon">
+                        <div>
+                            <span>مهدی وارسته نیا</span>
+                            <span>کارشناس آموزش ابتدایی</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a class="active" href="dashboard-system.html">
+                        <img src="assets/img/dashboard.png" alt="dashboard-icon">
+                        <span>داشبورد</span>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a href="report-system.html">
+                        <img src="assets/img/report.png" alt="send-report-icon">
+                        <span>ثبت گزارش</span>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a href="User-information.html">
+                        <img src="assets/img/graph.png" alt="profile-content-icon">
+                        <span>اطلاعات مدارس</span>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a href="viewReport.html">
+                        <img src="assets/img/case-study.png" alt="case-study-icon">
+                        <span>مشاهده گزارش ها</span>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a href="help-system.html">
+                        <img src="assets/img/guidance.png" alt="guidance-icon">
+                        <span>راهنما</span>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a href="login.html">
+                        <img src="assets/img/exit.png" alt="exit-icon">
+                        <span>خروج</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="acount-system-container report-container p-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 record-report-section">
+                        <div class="report-header-content">
+                            <img src="assets/img/report-important-content.png" alt="report-important-content-image">
+                            <h3>به بخش ثبت گزارش های آموزشی خوش آمدید :</h3>
+                            <div class="list-report-content">
+                                <ul class="mt-3">
+                                    <li><i class="fa-solid fa-shield-halved mr-2"></i>لطفا در انتخاب نمایندگی دقت لازم را داشته باشید.</li>
+                                    <li><i class="fa-solid fa-shield-halved mr-2"></i>بعد از ثبت گزارش دیگر به هیچ عنوان امکان ویرایش آن وجود ندارد.</li>
+                                    <li><i class="fa-solid fa-shield-halved mr-2"></i>در زمان ثبت تعداد دانش آموزان ، مجموع تعداد دانش آموزان مورد نظر است.</li>
+                                    <li><i class="fa-solid fa-shield-halved mr-2"></i>تیک عنوان صحت اطلاعات را قبل از ثبت گزارش حتما زده شود.</li>
+                                    <li><i class="fa-solid fa-shield-halved mr-2"></i>متن وارد شده را با دقت مطالعه کنید تا از درستی اطلاعات وارد شده اطمینان حاصل کنید.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <form action="" autocomplete="off">
+                            <div class="form-group-container">
+                                <h5><i class="fa-solid fa-school mr-2"></i>تعیین مدرسه مورد نظر :</h5>
+                                <div class="form-group-inner container">
+                                    <div class="row">
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group">
+                                                <label for="citySelectionform">نمایندگی</label>
+                                                <select class="form-control" id="citySelectionform">
+                                                    <option>فسا</option>
+                                                    <option>فیروزآباد</option>
+                                                    <option>کازرون</option>
+                                                    <option>فراشبند</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group">
+                                                <label for="supervisorTeacher">راهبر</label>
+                                                <select class="form-control" id="supervisorTeacher">
+                                                    <option>رضا صدری</option>
+                                                    <option>مهدی وارسته نیا</option>
+                                                    <option>علی صفری</option>
+                                                    <option>صادق رضایی</option>
+                                                    <option>صادق رضایی</option>
+                                                    <option>صادق رضایی</option>
+                                                    <option>صادق رضایی</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group">
+                                                <label for="SchoolNameSelect">مدرسه</label>
+                                                <select class="form-control" id="SchoolNameSelect">
+                                                    <option>دبستان شهید اسفندیاری</option>
+                                                    <option>دبستان زنده یاد رحیمی</option>
+                                                    <option>دبستان علامه طباطبایی</option>
+                                                    <option>دبستان زنده یاد صدرزاده</option>
+                                                    <option>دبستان شهید حاج قاسم سلیمانی</option>
+                                                    <option>دبستان معارف</option>
+                                                    <option>دبستان زنده یاد کنعانی وند</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5 class="mt-3 time-header"><i class="fa-solid fa-clock mr-2"></i>زمان ثبت گزارش :</h5>
+                                <div class="form-group-inner container">
+                                    <div class="row">
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group">
+                                                <label for="DateSelect">تاریخ</label>
+                                                <input class="form-control" type="text" id="DateSelect" />
+                                                <span id="Datespan"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group">
+                                                <label for="TeacherName">نام معلم</label>
+                                                <select class="form-control" id="TeacherName">
+                                                    <option>رضا صدری</option>
+                                                    <option>مهدی وارسته نیا</option>
+                                                    <option>علی صفری</option>
+                                                    <option>صادق رضایی</option>
+                                                    <option>صادق رضایی</option>
+                                                    <option>صادق رضایی</option>
+                                                    <option>صادق رضایی</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group">
+                                                <label for="numberStudent">تعداد دانش آموزان</label>
+                                                <input type="text" class="form-control" id="numberStudent">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-container form-editor-group">
+                                <h5 class="mt-3"><i class="fa-solid fa-shield-halved mr-2"></i>عنوان گزارش :</h5>
+                                <input class="report-name" type="text">
+                                <h5 class="mt-3"><i class="fa-solid fa-pen mr-2"></i>فرم ثبت گزارش :</h5>
+                                <input id="x" type="hidden" name="content">
+                                <trix-editor input="x"></trix-editor>
+                                <div class="send-report-container">
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                                          <label class="form-check-label" for="gridCheck">
+                                            صحت اطلاعات و گزارش ثبت شده مورد تایید این جانب می باشد
+                                          </label>
+                                        </div>
+                                    </div>
+                                    <button class="send-report-btn" type="submit"><i class="fa-solid fa-file-import mr-2"></i>ثبت گزارش</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 alert-box-section mt-4">
+                        <div class="alert alert-success" role="alert">
+                            <h4 class="alert-heading">سپاس از دقت نظر شما !!!</h4>
+                            <p>شما با ثبت گزارش خود نه تنها به کادر آموزش در سنجش و پایش دقیق اطلاعات کمک می کنید بلکه با این کار باعث ارتقای سطح کیفی مدارس ما نیز میشوید. آموزش و پرورش عشایر فارس به داشتن معلمان و همکاران ارجمندی همچون شما می بالد و افتخار می کند که میتواند کاری در جهت ارتقای سطح کیفی مدارس انجام دهد.</p>
+                            <hr>
+                            <p class="mb-0">در پایان شما می توانید نظر خود را درباره سامانه ما از طریق لینک زیر به صورت مستقیم با ما در میان بگذارید!!</p>
+                            <a class="text-decoration-none mt-4 d-inline-block" href="#"><i class="fa-solid fa-face-smile mr-2"></i>ثبت نظر درباره سامانه</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------ End system education section ------------------ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/countMe.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // --------------- Sweet alert style
+        Swal.fire({
+        title: 'آیا از ثبت گزارش خود اطمینان دارید ؟؟',
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'ثبت',
+        denyButtonText: `ثبت نشود`,
+        }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            Swal.fire('گزارش شما با موفقیت ثبت شد !!', '', 'success')
+        } else if (result.isDenied) {
+            Swal.fire('شما از ثبت گزارش خود انصراف دادید !!', '', 'info')
+        }
+        })
+    </script>
+    <!-- ---------------- Start Talk to support section ---------------- -->
+    <script type="text/javascript">
+      !function(){var i="cF6vCc",a=window,d=document;function g(){var g=d.createElement("script"),s="https://www.goftino.com/widget/"+i,l=localStorage.getItem("goftino_"+i);g.async=!0,g.src=l?s+"?o="+l:s;d.getElementsByTagName("head")[0].appendChild(g);}"complete"===d.readyState?g():a.attachEvent?a.attachEvent("onload",g):a.addEventListener("load",g,!1);}();
+    </script>
+    <!-- ---------------- End Talk to support section ---------------- -->
+    <script src="assets/js/persianDatepicker.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#DateSelect, #Datespan").persianDatepicker();       
+        });
+    </script>
+    <script type="text/javascript" src="assets/js/trix.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

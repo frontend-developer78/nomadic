@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>گزارش مدرسه شهید بهشتی | سامانه راهبران آموزشی</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b4735ff0d1.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/img/nomadic logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body dir="rtl" class="bg-light bg-system">
+    <!-- ------------------ Start system education section ------------------ -->
+    <section id="system" class="system-send-report">
+        <button class="menu-btn" type="button"><i class="fa-solid fa-bars"></i></button>
+        <div class="sidebar-system-container">
+            <button class="close-menu-btn" type="button"><i class="fa-regular fa-circle-xmark"></i></button>
+            <button class="anim-width-sidebar-btn" type="button"><img src="assets/img/next-button.png" alt="anim icon"></button>
+            <h5>سامانه راهبران آموزشی</h5>
+            <ul class="sidebar-system-content">
+                <li class="sidebar-items">
+                    <a class="profile-link-item" href="profile-system.html">
+                        <img src="assets/img/profile.png" alt="profile-icon">
+                        <div>
+                            <span>مهدی وارسته نیا</span>
+                            <span>کارشناس آموزش ابتدایی</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a class="active" href="dashboard-system.html">
+                        <img src="assets/img/dashboard.png" alt="dashboard-icon">
+                        <span>داشبورد</span>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a href="report-system.html">
+                        <img src="assets/img/report.png" alt="send-report-icon">
+                        <span>ثبت گزارش</span>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a href="User-information.html">
+                        <img src="assets/img/graph.png" alt="profile-content-icon">
+                        <span>اطلاعات مدارس</span>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a href="viewReport.html">
+                        <img src="assets/img/case-study.png" alt="case-study-icon">
+                        <span>مشاهده گزارش ها</span>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a href="help-system.html">
+                        <img src="assets/img/guidance.png" alt="guidance-icon">
+                        <span>راهنما</span>
+                    </a>
+                </li>
+                <li class="sidebar-items">
+                    <a href="login.html">
+                        <img src="assets/img/exit.png" alt="exit-icon">
+                        <span>خروج</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="acount-system-container see-report-school-container p-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 school-report-box-wrapper">
+                        <div class="school-report-box-inner p-4">
+                            <h4 class="text-center">گزارش مدرسه ابتدایی شهید مطهری</h4>
+                            <form action="" class="mt-4">
+                                <div class="row">
+                                  <div class="col-12 col-md-4">
+                                    <label class="mt-3" for="name-person-organization">نام راهبر :</label>
+                                    <input id="name-person-organization" name="name-person-organization" type="text" class="form-control" value="علی خسروی" disabled>
+                                  </div>
+                                  <div class="col-12 col-md-4">
+                                    <label class="mt-3" for="name-teacher">نام معلم :</label>
+                                    <input id="name-teacher" name="name-teacher" type="text" class="form-control" value="کیوان جهانی" disabled>
+                                  </div>
+                                  <div class="col-12 col-md-4">
+                                    <label class="mt-3" for="number-student">تعداد دانش آموزان :</label>
+                                    <input id="number-student" name="number-student" type="text" class="form-control" value="24" disabled>
+                                  </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-12 col-md-4">
+                                        <label class="mt-3" for="date-time">تاریخ بازدید مدرسه :</label>
+                                        <input id="date-time" name="date-time" type="text" class="form-control" value="1401/9/15" disabled>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label class="mt-3" for="name-boss-school">نام مدیر :</label>
+                                        <input id="name-boss-school" name="name-boss-school" type="text" class="form-control" value="سجاد دمیری" disabled>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label class="mt-3" for="name-boss-organization">نام مسئول نمایندگی :</label>
+                                        <input id="name-boss-organization" name="name-boss-organization" type="text" class="form-control" value="اشکان ساسانی" disabled>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="school-report-box-content mt-5">
+                                <h3>گزارش وضعیت آموزشی دبستان شهید مطهری فسا</h3>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                            </div>
+                            <div class="feedback-container">
+                                <h6 class="mb-2">ثبت بازخورد</h6>
+                                <form action="">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="feedbackTextarea" rows="6"></textarea>
+                                    </div>
+                                    <div class="feedback-rating-container">
+                                        <div class="feedback-rating-inner">
+                                            <h5>میزان رضایت از گزارش ثبت شده</h5>
+                                            <div class="rating">
+                                                <input type="radio" name="rating" id="rating-5" value="5">
+                                                <label for="rating-5"></label>
+                                                <input type="radio" name="rating" id="rating-4" value="4">
+                                                <label for="rating-4"></label>
+                                                <input type="radio" name="rating" id="rating-3" value="3">
+                                                <label for="rating-3"></label>
+                                                <input type="radio" name="rating" id="rating-2" value="2">
+                                                <label for="rating-2"></label>
+                                                <input type="radio" name="rating" id="rating-1" value="1">
+                                                <label for="rating-1"></label>
+                                                <div class="emoji-wrapper">
+                                                  <div class="emoji">
+                                                    <img class="rating-0" src="assets/img/thinking.png" alt="thinking">
+                                                    <img class="rating-1" src="assets/img/angry.png" alt="angry">
+                                                    <img class="rating-2" src="assets/img/sad.png" alt="very sad">
+                                                    <img class="rating-3" src="assets/img/sad (1).png" alt="sad">
+                                                    <img class="rating-4" src="assets/img/emoji.png" alt="happy">
+                                                    <img class="rating-5" src="assets/img/party.png" alt="beatifull">
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button id="feedbackBtn" type="submit">ارسال بازخورد</button>
+                                </form>
+                            </div>
+                            <button id="download-report-btn" type="button" name="download"><i class="fa-solid fa-download mr-2"></i>دانلود گزارش</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------ End system education section ------------------ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/countMe.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- ---------------- Start Talk to support section ---------------- -->
+    <script type="text/javascript">
+      !function(){var i="cF6vCc",a=window,d=document;function g(){var g=d.createElement("script"),s="https://www.goftino.com/widget/"+i,l=localStorage.getItem("goftino_"+i);g.async=!0,g.src=l?s+"?o="+l:s;d.getElementsByTagName("head")[0].appendChild(g);}"complete"===d.readyState?g():a.attachEvent?a.attachEvent("onload",g):a.addEventListener("load",g,!1);}();
+    </script>
+    <!-- ---------------- End Talk to support section ---------------- -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

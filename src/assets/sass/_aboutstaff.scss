@@ -1,0 +1,156 @@
+// ------------------ Start about the staff
+#aboutstaff{
+    margin-top: 80px;
+    position: relative;
+    &::before{
+        content: '';
+        @include position-absolute(0,null,null,-231px);
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        transform: skew(10deg);
+        background-color: #02409c4f;
+    }
+    &::after{
+        content: '';
+        @include position-absolute(50px,null,null,-251px);
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        transform: skew(10deg);
+        background-color: #1124cf4f;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    .breadcrumb-container{
+        nav{
+            ol.breadcrumb{
+                background-color: $breadcrumb-bg;
+                border-radius: 8px;
+                .breadcrumb-item{
+                    font: {
+                        size:$default-font-size - 2px;
+                    }
+                    a{
+                        color: $breadcrumb-link-color;
+                        @include transition-default(all,0.4s);
+                        &:hover{
+                            color: $breadcrumb-link-color-hover;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .about-profile-section{
+        .about-profile-inner{
+            img{
+                border-radius: 15px;
+                box-shadow: 3px 5px 16px 0px rgb(0 0 0 / 62%);
+            }
+            ul{
+                margin-top: 20px;
+                border: 1px solid #d4d4d4;
+                @include margin-padding(15px,15px,15px,15px,false);
+                border-radius: 10px;
+                h5{
+                    color: $about-profile-header-color;
+                    font: {
+                        weight:700;
+                        size:$default-font-size + 1px;
+                    }
+                }
+                li{
+                    font: {
+                        size:$default-font-size - 1px;
+                    }
+                    line-height: 25px;
+                    margin-bottom: 20px;
+                    color: #555555;
+                    span{
+                        font: {
+                            weight:700;
+                            size:$default-font-size - 2px;
+                        }
+                        color: rgb(69, 1, 95);
+                        i{
+                            vertical-align: -2px;
+                            color: rgb(69, 1, 95);
+                        }
+                    }
+                }
+                a{
+                    border: none;
+                    outline: none;
+                    background-color: #3b0199;
+                    color: #fff;
+                    border-radius: 5px;
+                    @include margin-padding(3px,5px,3px,5px,false);
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    font: {
+                        size:$default-font-size - 2px;
+                    }
+                    i{
+                        vertical-align: -2px;
+                    }
+                }
+            }
+        }
+    }
+    .Specifications-content-section{
+        .Specifications-content-inner{
+            @include margin-padding(40px,20px,20px,20px,false);
+            border: 1px solid #dddddd;
+            border-radius: 10px;
+            span{
+                font: {
+                    size:$default-font-size - 1px;
+                }
+                color: #575757;
+            }
+            h5{
+                font: {
+                    weight:700;
+                    size:$default-font-size + 2px;
+                }
+                color: $about-profile-header-color;
+            }
+            div.Specifications-details{
+                ul{
+                    margin-bottom: 40px;
+                    li{
+                        margin-bottom: 15px;
+                        font: {
+                            size:$default-font-size - 1px;
+                            weight:700;
+                        }
+                        color: #3b0199;
+                        span{
+                            font: {
+                                weight:300;
+                            }
+                        }
+                    }
+                }
+                h6{
+                    font: {
+                        weight:700;
+                        size:$default-font-size - 1px;
+                    }
+                    color: #222222;
+                    margin-bottom: 20px;
+                }
+                p{
+                    line-height: 33px;
+                    font: {
+                        size:$default-font-size - 1px;
+                    }
+                    text-align: justify;
+                    color: #575757;
+                }
+            }
+        }
+    }
+}

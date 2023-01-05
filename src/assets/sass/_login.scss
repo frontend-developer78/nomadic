@@ -1,0 +1,171 @@
+// -------------- Start login section style
+.login-page{
+    background: url("../img/e-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    // background-attachment: fixed;
+}
+#login{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    .login-wrapper{
+        background-color: #fff;
+        @include margin-padding(20px,20px,20px,20px,false);
+        border-radius: 15px;
+        box-shadow: 5px 7px 50px rgb(0 0 0 / 48%);
+        .login-form-section{
+            .login-form-container{
+                form{
+                    .form-header{
+                        text-align: center;
+                        h5{
+                            font: {
+                                weight: 700;
+                                size:$default-font-size + 4px;
+                            }
+                            color: $form-header-color;
+                            margin: 40px 0;
+                            text-shadow: 2px 4px 9px rgba(0, 0, 0, 0.342);
+                        }
+                    }
+                    .custom-form-group{
+                        position: relative;
+                        margin-bottom: 40px;
+                        label{
+                            background: #fff;
+                            font: {
+                                size:$default-font-size - 2px;
+                                weight:700;
+                            }
+                            color: #535353;
+                            padding: 0 15px;
+                            @include position-absolute(-13px,91px,null,null);
+                            @include transition-default(all,0.4s);
+                            i{
+                                vertical-align: -1px;
+                                color: #83a2f7;
+                            }
+                        }
+                        input{
+                            outline: none;
+                            background-color: transparent;
+                            border: 2px solid #dddddd;
+                            width: 70%;
+                            height: 48px;
+                            border-radius: 6px;
+                            @include margin-padding(0,10px,0,10px,false);
+                            @include transition-default(all,0.7s);
+                            color: rgb(53, 53, 53);
+                            font: {
+                                size:$default-font-size - 1px;
+                            }
+                        }
+                        input:focus{
+                            border: 2px solid rgba(10, 47, 167, 0.753);
+                        }
+                        .hide-pass-section{
+                            width: 70%;
+                            position: relative;
+                            i#show-pass{
+                                @include position-absolute(-31px,null,null,12px);
+                                color: #aaaaaa;
+                                font: {
+                                    size:$default-font-size - 1px;
+                                }
+                                @include transition-default(all,0.4s);
+                                &:hover{
+                                    color: #313131;
+                                }
+                            }
+                        }
+                    }
+                    .form-check{
+                        right: 80px;
+                        label{
+                            color: #163f99;
+                            font: {
+                                size:$default-font-size - 1px;
+                            }
+                        }
+                        input{
+                            margin-top: 6px;
+                            padding: 2px;
+                        }
+                    }
+                    .submit-btn{
+                        width: 70%;
+                        height: 40px;
+                        display: block;
+                        margin-top: 10px;
+                        background: transparent;
+                        outline: none;
+                        border: 2px solid rgb(20, 6, 141);
+                        border-radius: 5px;
+                        color: rgb(20, 6, 141);
+                        font: {
+                            size:$default-font-size + 2px;
+                            weight:700;
+                        }
+                        @include transition-default(all,0.4s);
+                        &:hover{
+                            color: #fff;
+                            background-color: rgb(20, 6, 141);
+                            box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.342);
+                        }
+                        &:active{
+                            transform: scale(0.9);
+                        }
+                    }
+                    a{
+                        display: inline-block;
+                        margin-top: 20px;
+                        margin-right: 80px;
+                        color: rgb(252, 40, 40);
+                        font: {
+                            size:$default-font-size - 1px;
+                        }
+                        i{
+                            vertical-align: -2px;
+                        }
+                    }
+                }
+            }
+        }
+        .login-description{
+            ul{
+                padding: 20px 70px;
+                background-color: #ffffffe8;
+                border: 1px dashed #bbbbbb;
+                border-radius: 10px;
+                // box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.342);
+                z-index: 2;
+                li{
+                    margin-bottom: 20px;
+                    line-height: 25px;
+                    color: #313131;
+                    font: {
+                        size:$default-font-size - 1px;
+                    }
+                    i{
+                        vertical-align: -2px;
+                        color: #163f99;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:992px){
+    #login{
+        .login-wrapper{
+            margin: 0 6px;
+            .login-form-image{
+                display: none;
+            }
+            .login-description{
+                margin-top: 50px;
+            }
+        }
+    }
+}

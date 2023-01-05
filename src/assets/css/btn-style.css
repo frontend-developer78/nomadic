@@ -1,0 +1,149 @@
+/*** General Button Styles ***/
+.button-container {
+    display: inline-block;
+    margin: 10px 10px;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: 2px;
+    height: 45px;
+    width: 200px;
+    text-align: center;
+    -webkit-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000; }
+    .button-container .flipper {
+      transition: all 0.5s ease-in-out;
+      -webkit-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      position: relative; }
+    .button-container .button {
+      height: 45px;
+      width: 200px;
+      border-radius: 3px;
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      -webkit-box-shadow: 1px 2px 4px -1px rgba(60, 60, 60, 0.64);
+      box-shadow: 1px 2px 4px -1px rgba(60, 60, 60, 0.64); }
+      .button-container .button i.fab {
+        color: white;
+        font-size: 20px;
+        margin: auto;
+        text-shadow: 0.5px 1px 2px #3c3c3c; }
+      .button-container .button.front {
+        z-index: 10; }
+      .button-container .button.back {
+        color: white;
+        font-size: 15px;
+        text-transform: uppercase; }
+/*** Horizontal Flip ***/
+.button-flip-horizontal .front {
+    background-image: -webkit-linear-gradient(90deg, #2d7ad8, #01c2f3);
+    background-image: linear-gradient(90deg, #53a0fd, #086e88); }
+  
+  .button-flip-horizontal .back {
+    background-image: -webkit-linear-gradient(90deg, #0c5466, #53a0fd);
+    background-image: linear-gradient(90deg, #01c2f3, #165095);
+    transform: rotateY(-180deg); }
+  
+  .button-flip-horizontal:hover .flipper-flip-horizontal {
+    transform: rotateY(180deg); }
+/*** Oblique Flip ***/
+.button-flip-oblique .front {
+    background-image: linear-gradient(90deg, #7f068f, #e62222); }
+  
+  .button-flip-oblique .back {
+    transform: rotateY(-180deg);
+    background-image: linear-gradient(90deg, #e62222, #7f068f); }
+  
+  .button-flip-oblique:hover .flipper-flip-oblique {
+    transform: rotate3d(1, 10, 0, 180deg); }
+/*** iOS Style ***/
+input#ios {
+    max-height: 0;
+    max-width: 0;
+    opacity: 0; }
+    input#ios + label {
+      display: block;
+      position: relative;
+      box-shadow: inset 0 0 0px 1px #a6a6a6;
+      text-indent: -5000px;
+      height: 30px;
+      width: 50px;
+      border-radius: 15px; }
+    input#ios + label:before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 30px;
+      width: 30px;
+      top: 0;
+      left: 0;
+      border-radius: 15px;
+      background: transparent;
+      -moz-transition: .2s ease-in-out;
+      -webkit-transition: .2s ease-in-out;
+      transition: .2s ease-in-out; }
+    input#ios + label:after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 30px;
+      width: 30px;
+      top: 0;
+      left: 0px;
+      border-radius: 15px;
+      background: white;
+      box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
+      -moz-transition: .2s ease-in-out;
+      -webkit-transition: .2s ease-in-out;
+      transition: .2s ease-in-out; }
+    input#ios:checked + label:before {
+      width: 50px;
+      background: #13bf11; }
+    input#ios:checked + label:after {
+      left: 20px;
+      box-shadow: inset 0 0 0 1px #13bf11, 0 2px 4px rgba(0, 0, 0, 0.2); }
+      /*** Water Fill ***/
+p.reference {
+    margin-top: -20px;
+    margin-bottom: 10px;
+    font-size: 12px; }
+    p.reference a {
+      color: #3c3c3c; }
+  
+  .button-water-fill .button {
+    background-position: 0 -50%;
+    background-repeat: repeat-x;
+    transition: background-position 0.75s ease; }
+    .button-water-fill .button:hover {
+      background-position: 100% 60%;
+      color: white !important; }
+  
+  .button-water-fill.wave-blue .button {
+    color: #3CBBF7;
+    background-image: url("../image/wave-blue.png");
+}
+/* -------------------------------- 
+			3D-Flip
+-------------------------------- */
+.button-flip3d-vertical2 .flipper-flip3d-vertical2 {
+    transform-origin: 100% 22.5px; }
+  
+  .button-flip3d-vertical2 .front {
+    transform: translateZ(22.5px);
+    background-image: linear-gradient(90deg, #000, #3c3c3c); }
+  
+  .button-flip3d-vertical2 .back {
+    -webkit-transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(22.5px);
+    -ms-transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(22.5px);
+    transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(22.5px);
+    background-image: linear-gradient(90deg, #000, #3c3c3c); }
+  
+  .button-flip3d-vertical2:hover .flipper-flip3d-vertical2 {
+    transform: rotateX(90deg); }

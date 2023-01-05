@@ -1,0 +1,82 @@
+// ------------------ Start management cv style
+#managementCv{
+    margin-top: 80px;
+    .management-cv-header{
+        h5{
+            font: {
+                size:$default-font-size + 4px;
+                weight:700;
+            }
+            color: rgb(7, 63, 136);
+        }
+    }
+    .management-cv-card-container{
+        .management-cv-card-inner{
+            overflow: hidden;
+            @include flex(flex,center,space-between);
+            border: 1px solid #efefef;
+            border-radius: 10px;
+            max-height: 174px;
+            box-shadow: 3px 5px 15px rgb(0 0 0 / 22%);
+            img{
+                display: flex;
+                flex-basis: 30%;
+                max-width: 30%;
+                margin-left: 20px;
+            }
+            .management-cv-card-content{
+                display: flex;
+                flex-basis: 70%;
+                max-width: 70%;
+                flex-direction: column;
+                padding: 15px;
+                position: relative;
+                &::before{
+                    content: '';
+                    @include position-absolute(0,-29px,null,null);
+                    width: 30px;
+                    height: 100%;
+                    background-color: #ffffff;
+                    transform: skew(-5deg);
+                }
+                h6{
+                    font: {
+                        size:$default-font-size - 1px;
+                        weight:700;
+                    }
+                    color: $management-card-color;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font: {
+                        size:$default-font-size - 2px;
+                    }
+                    color: #7a7a7a;
+                }
+                span{
+                    font: {
+                        size:$default-font-size - 2px;
+                    }
+                    color: #011864;
+                    i{
+                        vertical-align: -2px;
+                        color: rgb(252, 194, 2);
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:992px){
+    #managementCv{
+        .management-cv-card-container{
+            .management-cv-card-inner{
+                .management-cv-card-content{
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

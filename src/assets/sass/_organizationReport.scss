@@ -1,0 +1,174 @@
+#system{
+    .reading-report-container{
+        .introduction-organization-container{
+            .introduction-wrapper{
+               background: $introduction-bg;
+               @include border-radius(20px,20px,20px,20px);
+               box-shadow: $shadow;
+               @include margin-padding(20px,20px,20px,20px,false);
+               .organization-image-wrapper{
+                    img{
+                        @include border-radius(10px,10px,10px,10px);
+                        box-shadow: $shadow;
+                        border: 2px solid rgb(44, 44, 44);
+                    }    
+               }
+               .organization-information-wrapper{
+                    .organization-information-inner{
+                        h5{
+                            font: {
+                                size:$default-font-size + 3px;
+                                weight: 700;
+                            }
+                        }
+                        ul{
+                            li{
+                                @include margin-padding(0,4px,12px,0);
+                                span{
+                                   line-height: 30px; 
+                                }
+                                span.head-org-text{
+                                    font: {
+                                        weight:700;
+                                    }
+                                    color: rgb(74, 6, 184);
+                                }
+                                span.content-org-text{
+                                    font: {
+                                        size:$default-font-size - 1px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+               }
+            }
+        }
+        .organization-report-searching{
+            margin-top: 50px;
+            h5{
+                margin-bottom: 20px;
+                padding-right: 6px;
+                border-right: 4px solid red;
+                font: {
+                    size:$default-font-size + 1px;
+                    weight: 700;
+                }
+            }
+            .organization-searching-form{
+                background: $introduction-bg;
+                @include border-radius(20px,20px,20px,20px);
+                box-shadow: $shadow;
+                @include margin-padding(20px,20px,20px,20px,false);
+                .search-card-wrapper{
+                    position: relative;
+                    label{
+                        // @include position-absolute()
+                        background-color: #fff;
+                        color: #11005c;
+                        font: {
+                            size:$default-font-size - 2px;
+                            weight:700;
+                        }
+                    }
+                    input{
+                        @include margin-padding(4px,12px,4px,7px,false);
+                        outline: none;
+                        box-shadow: none;
+                        border: 1px solid #c4c4c4;
+                        @include border-radius(8px,8px,8px,8px);
+                        color: #1a1a1a;
+                        font: {
+                            size:$default-font-size - 1px;
+                        }
+                        // @include transition-default(all,0.4s);
+                        &:focus{
+                            border: 2px solid rgb(61, 0, 141);
+                        }
+                    }
+                    select#name-agency{
+                        @include margin-padding(4px,12px,4px,7px,false);
+                        outline: none;
+                        box-shadow: none;
+                        border: 1px solid #c4c4c4;
+                        @include border-radius(8px,8px,8px,8px);
+                    }
+                }
+                #form-search-btn{
+                    margin-top: 20px;
+                    border: none;
+                    outline: none;
+                    @include margin-padding(3px,12px,3px,12px,false);
+                    background: #11005c;
+                    color: #fff;
+                    border-radius: 7px;
+                    @include transition-default(all,0.4s);
+                    font: {
+                        size:$default-font-size - 1px;
+                    }
+                    i{
+                        vertical-align: -2px;
+                    }
+                    &:hover{
+                        box-shadow: $shadow;
+                        transform: translateY(-1px);
+                    }
+                    &:active{
+                        transform: scale(0.9);
+                    }
+                }
+            }
+        }
+        .report-box-download-container{
+            margin-top: 50px;
+            .report-download-card{
+                .report-download-card-inner{
+                    background: rgba(255, 255, 255, 0.51);
+                    @include border-radius(16px,16px,16px,16px);
+                    @include margin-padding(10px,10px,10px,10px,false);
+                    /* From https://css.glass */
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(6.4px);
+                    -webkit-backdrop-filter: blur(6.4px);
+                    border: 1px solid rgba(255, 255, 255, 0.86);
+                    h5{
+                        font: {
+                            weight:700;
+                        }
+                        color: #11005c;
+                    }
+                    p{
+                        font: {
+                            size:$default-font-size - 1px;
+                        }
+                    }
+                    .rate-report-box{
+                        i{
+                            color: rgb(243, 178, 0);
+                        }
+                    }
+                    .download-btn-report{
+                        background: #11005c;
+                        color: #fff;
+                        width: 100%;
+                        border-radius: 7px;
+                        outline: none;
+                        border: none;
+                        @include margin-padding(3px,0,3px,0,false);
+                        @include transition-default(all,0.4s);
+                        font: {
+                            size:$default-font-size - 1px;
+                        }
+                        &:active{
+                            transform: scale(0.9);
+                        }
+                        &:hover{
+                            transform: translateY(-3px);
+                            box-shadow: 0px 5px 10px rgb(0 0 0 / 48%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

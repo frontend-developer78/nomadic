@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدیریت آموزش و پرورش عشایر فارس</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b4735ff0d1.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/img/nomadic logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body dir="rtl">
+    <!-- ------------------ Start navbar menu section ------------------ -->
+    <nav id="navbar" class="container-fluid d-flex align-items-center">
+        <div class="navbar-menu-logo">
+            <a href="index.html" title="مدیریت آموزش و پرورش عشایر فارس"><img class="img-fluid" src="assets/img/navbar menu logo.png" width="67px" alt="nomadic logo"></a>
+            <a class="logo-image-scroll" href="index.html" title="مدیریت آموزش و پرورش عشایر فارس"><img class="img-fluid" src="assets/img/navbar menu logo-2.png" width="67px" alt="nomadic logo"></a>
+        </div>
+        <button class="menu-toggle-button ml-3" type="button"><i class="fa-solid fa-bars"></i></button>
+        <div class="nav-container mr-auto">
+          <button class="close-menu-btn ml-3" type="button"><i class="fa-regular fa-circle-xmark"></i></button>
+          <ul class="nav py-2">
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">مدیریت</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  معاونت آموزشی<i class="fa-solid fa-angle-down ml-1"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <span class="dropdown-item d-flex align-items-center justify-content-between" onmouseover="dropDownBox()">ابتدایی<i class="fa-solid fa-caret-left"></i></span>
+                  <div id="dropCard" class="drop-card-section">
+                    <ul>
+                      <li><a href="login.html"><i class="fa-solid fa-angle-left mr-1"></i>سامانه راهبران</a></li>
+                      <li><a class="d-flex align-items-center" href="#"><i class="fa-solid fa-angle-left mr-1"></i>سرگروه های آموزشی</a></li>
+                      <li><a class="d-flex align-items-center" href="#"><i class="fa-solid fa-angle-left mr-1"></i>دوه دوم ابتدایی</a></li>
+                    </ul>
+                  </div>
+                  <a class="dropdown-item" href="#">متوسطه اول</a>
+                  <a class="dropdown-item" href="#">متوسطه دوم</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">درباره معاونت</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  معاونت پرورشی<i class="fa-solid fa-angle-down ml-1"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">قرآن و عترت</a>
+                  <a class="dropdown-item" href="#">احکام و نماز</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">درباره معاونت</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  معاونت پشتیبانی<i class="fa-solid fa-angle-down ml-1"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">ضمن خدمت</a>
+                  <a class="dropdown-item" href="#">امور اداری</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">درباره معاونت</a>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="announcement.html">اطلاعیه ها</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">راه های ارتباطی</a>
+            </li>
+          </ul>
+          <p class="social-media-header text-center px-3">ما را در شبکه های اجتماعی دنبال کنید :</p>
+          <div class="social-media-container">
+            <a href="#" title="اینستاگرام"><img src="assets/img/instagram.png" width="30" height="30" alt="instagram"></a>
+            <a href="#" title="شاد"><img src="assets/img/Shad-Logo.png" width="30" height="30" alt="shad"></a>
+            <a href="#" title="ایتا"><img src="assets/img/eita-logo.png" width="30" height="30" alt="eita"></a>
+            <a href="#" title="سروش"><img src="assets/img/soroush-logo.png" width="30" height="30" alt="soroush"></a>
+          </div>
+          <div class="menu-responsive-logo">
+            <a href="index.html" title="مدیریت آموزش و پرورش عشایری فارس"><img class="img-fluid" src="assets/img/navbar menu logo.png" alt="nomadic logo"></a>
+          </div>
+        </div>
+        <form action="" class="search-box-container">
+          <input type="text" placeholder="جستوجو ...">
+          <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <div class="flag-container">
+          <img src="assets/img/flag iranian image.png" width="67" alt="iranian flag image">
+        </div>
+    </nav>
+    <!-- ------------------ End navbar menu section ------------------ -->
+    <!-- ------------------ Start header news section ------------------ -->
+    <section id="header" class="container">
+      <div class="row">
+        <div class="col-12 col-md-8 news-carousel-container">
+          <p class="news-carousel-header mb-0">جدیدترین اخبار</p>
+          <div class="news-carousel-inner">
+            <div class="owl-carousel custom-owl-carousel">
+              <div class="card-news-carousel mx-3">
+                <img class="img-fluid" src="assets/img/news-carousel-image-1.png" alt="news-image">
+                <div class="card-news-carousel-content">
+                  <p>مراسم بازگشایی مدارس</p>
+                  <h3>مراسم آغازین بازگشایی مدارس ( سال تحصیلی 1401-1402 )</h3>
+                  <a class="text-decoration-none" href="#">ادامه مطلب<i class="fa-solid fa-plus ml-1"></i></a>
+                  <!-- <button type="button"></button> -->
+                  <div class="details-news-time d-flex align-items-center">
+                    <span class="mr-3"><i class="fa-solid fa-calendar-days mr-1"></i>1401/7/2</span>
+                    <span><i class="fa-regular fa-clock mr-1"></i>8:23 دقیقه</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-news-carousel mx-3">
+                <img class="img-fluid" src="assets/img/news-carousel-image-2.png" alt="news-image">
+                <div class="card-news-carousel-content">
+                  <p>گردهمایی مسولین نمایندگی ها و راهبران</p>
+                  <h3>اولین گردهمایی راهبران و مسئولین نمایندگی ها در سال 1401</h3>
+                  <a class="text-decoration-none" href="#">ادامه مطلب<i class="fa-solid fa-plus ml-1"></i></a>
+                  <!-- <button type="button"></button> -->
+                  <div class="details-news-time d-flex align-items-center">
+                    <span class="mr-3"><i class="fa-solid fa-calendar-days mr-1"></i>1401/6/25</span>
+                    <span><i class="fa-regular fa-clock mr-1"></i>15:03 دقیقه</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-news-carousel mx-3">
+                <img class="img-fluid" src="assets/img/news-carousel-image-3.png" alt="news-image">
+                <div class="card-news-carousel-content">
+                  <p>وزیر امور اقتصادی</p>
+                  <h3>حضور وزیر امور اقتصادی و دارایی در آيين نواختن زنگ آغاز سال تحصیلی</h3>
+                  <a class="text-decoration-none" href="#">ادامه مطلب<i class="fa-solid fa-plus ml-1"></i></a>
+                  <!-- <button type="button"></button> -->
+                  <div class="details-news-time d-flex align-items-center">
+                    <span class="mr-3"><i class="fa-solid fa-calendar-days mr-1"></i>1401/6/29</span>
+                    <span><i class="fa-regular fa-clock mr-1"></i>17:41 دقیقه</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-news-carousel mx-3">
+                <img class="img-fluid" src="assets/img/news-carousel-image-4.png" alt="news-image">
+                <div class="card-news-carousel-content">
+                  <p>از سوي وزیر آموزش و پرورش انجام شد؛</p>
+                  <h3>ابلاغ سلام رئيس جمهور به دانش‌آموزان شهرستان‌های استان تهران</h3>
+                  <a class="text-decoration-none" href="#">ادامه مطلب<i class="fa-solid fa-plus ml-1"></i></a>
+                  <!-- <button type="button"></button> -->
+                  <div class="details-news-time d-flex align-items-center">
+                    <span class="mr-3"><i class="fa-solid fa-calendar-days mr-1"></i>1401/7/3</span>
+                    <span><i class="fa-regular fa-clock mr-1"></i>7:14 دقیقه</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-news-carousel mx-3">
+                <img class="img-fluid" src="assets/img/news-carousel-image-5.png" alt="news-image">
+                <div class="card-news-carousel-content">
+                  <p>رئیس سازمان پژوهش و برنامه‌ریزی آموزشی</p>
+                  <h3>سهم دستگاه‌های اجرایی در پیشبرد اهداف آموزش‌وپرورش مشخص شود</h3>
+                  <a class="text-decoration-none" href="#">ادامه مطلب<i class="fa-solid fa-plus ml-1"></i></a>
+                  <!-- <button type="button"></button> -->
+                  <div class="details-news-time d-flex align-items-center">
+                    <span class="mr-3"><i class="fa-solid fa-calendar-days mr-1"></i>1401/5/16</span>
+                    <span><i class="fa-regular fa-clock mr-1"></i>23:09 دقیقه</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-news-carousel mx-3">
+                <img class="img-fluid" src="assets/img/news-carousel-image-6.png" alt="news-image">
+                <div class="card-news-carousel-content">
+                  <p>رئیس سازمان آموزش و پرورش استثنایی</p>
+                  <h3>مجاهدت معلمان جلوه ای از ایثار و فداکاری است</h3>
+                  <a class="text-decoration-none" href="#">ادامه مطلب<i class="fa-solid fa-plus ml-1"></i></a>
+                  <!-- <button type="button"></button> -->
+                  <div class="details-news-time d-flex align-items-center">
+                    <span class="mr-3"><i class="fa-solid fa-calendar-days mr-1"></i>1401/6/1</span>
+                    <span><i class="fa-regular fa-clock mr-1"></i>9:32 دقیقه</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-news-wrapper px-2 mt-3">
+            <a href="#">
+              <div class="card-news-inner d-flex align-items-center">
+                <img src="assets/img/news-card-image-1.png" alt="news image">
+                <div class="card-news-content">
+                  <h5>بخشنامه ترویج و توسعه فرهنگ نماز ابلاغ شد</h5>
+                  <p class="mb-0">از سوي وزیر آموزش و پرورش بخشنامه ۱۲ ماده‌ای ترویج اقامه نماز به مدیران کل و روسای شورای اقامه نماز آموزش و پرورش ابلاغ شد.</p>
+                  <div class="mt-3 d-flex align-items-center justify-content-between">
+                    <span><i class="fa-solid fa-calendar-days mr-1"></i>یکشنبه 1401/5/28</span>
+                    <span><i class="fa-regular fa-clock mr-1"></i>ساعت 8:47</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="card-news-inner mt-2 d-flex align-items-center">
+                <img src="assets/img/news-card-image-2.png" alt="news image">
+                <div class="card-news-content">
+                  <h5>دستاوردهای آموزش و پرورش استان مركزی در سفر رئيس جمهور</h5>
+                  <p class="mb-0">۴۲۵۰ میلیارد ریال در سفر هیات دولت به آموزش و پرورش این استان اختصاص یافت که تا ۲ سال آینده این منابع مالی تخصیص می یابد.</p>
+                  <div class="mt-3 d-flex align-items-center justify-content-between">
+                    <span><i class="fa-solid fa-calendar-days mr-1"></i>چهارشنبه 1401/5/23</span>
+                    <span><i class="fa-regular fa-clock mr-1"></i>ساعت 19:07</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="card-news-inner mt-2 d-flex align-items-center">
+                <img src="assets/img/news-card-image-3.png" alt="news image">
+                <div class="card-news-content">
+                  <h5>رئیس مرکز سنجش و پایش کیفیت آموزشی</h5>
+                  <p class="mb-0">۷۰۰ هزار معلم‌ مدارک خود را در سامانه رتبه‌بندی معلمان بارگذاری کرده‌اند</p>
+                  <div class="mt-3 d-flex align-items-center justify-content-between">
+                    <span><i class="fa-solid fa-calendar-days mr-1"></i>سه شنبه 1401/5/22</span>
+                    <span><i class="fa-regular fa-clock mr-1"></i>ساعت 10:25</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="card-news-inner mt-2 d-flex align-items-center">
+                <img src="assets/img/news-card-image-3.png" alt="news image">
+                <div class="card-news-content">
+                  <h5>رئیس مرکز سنجش و پایش کیفیت آموزشی</h5>
+                  <p class="mb-0">۷۰۰ هزار معلم‌ مدارک خود را در سامانه رتبه‌بندی معلمان بارگذاری کرده‌اند</p>
+                  <div class="mt-3 d-flex align-items-center justify-content-between">
+                    <span><i class="fa-solid fa-calendar-days mr-1"></i>سه شنبه 1401/5/22</span>
+                    <span><i class="fa-regular fa-clock mr-1"></i>ساعت 10:25</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="card-news-inner mt-2 d-flex align-items-center">
+                <img src="assets/img/news-card-image-4.png" alt="news image">
+                <div class="card-news-content">
+                  <h5>رئیس سازمان پژوهش و برنامه‌ریزی آموزشی در نشست خبری</h5>
+                  <p class="mb-0">نقطه عطف نظام تعليم و تربيت، تحول در محتوای کتاب‌های درسی برای دهه پیش رو خواهد بود</p>
+                  <div class="mt-3 d-flex align-items-center justify-content-between">
+                    <span><i class="fa-solid fa-calendar-days mr-1"></i>شنبه 1401/5/19</span>
+                    <span><i class="fa-regular fa-clock mr-1"></i>ساعت 22:03</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="all-news.html">
+              <div class="btn-news-section mt-2 d-flex align-items-center justify-content-center">
+                <p class="d-flex align-items-center">مشاهده تمامی اخبار<i class="fa-solid fa-arrow-left ml-1"></i></p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 sidebar-container">
+          <div class="sidebar-inner">
+            <img class="img-fluid mb-3" src="assets/img/year-1401.png" alt="سال 1401">
+            <ul class="link-list-section mb-3">
+              <h5 class="mb-3">لینک های مرتبط</h5>
+              <li class="mb-2"><a class="text-decoration-none" href="#"><i class="fa-solid fa-link mr-1"></i>وزارت آموزش و پرورش</a></li>
+              <li class="mb-2"><a class="text-decoration-none" href="#"><i class="fa-solid fa-link mr-1"></i>سازمان سنجش</a></li>
+              <li class="mb-2"><a class="text-decoration-none" href="#"><i class="fa-solid fa-link mr-1"></i>سامانه رتبه بندی معلمان</a></li>
+              <li class="mb-2"><a class="text-decoration-none" href="#"><i class="fa-solid fa-link mr-1"></i>سامانه معلم</a></li>
+              <li class="mb-2"><a class="text-decoration-none" href="#"><i class="fa-solid fa-link mr-1"></i>سامانه جامع نماد</a></li>
+              <li class="mb-2"><a class="text-decoration-none" href="#"><i class="fa-solid fa-link mr-1"></i>سامانه حفظ قرآن کریم</a></li>
+              <li class="mb-2"><a class="text-decoration-none" href="#"><i class="fa-solid fa-link mr-1"></i>سامانه مدیریت دانش</a></li>
+            </ul>
+            <a class="Government-news-site" href="#" title="پایگاه خبری رهبری"><img class="img-fluid mt-2" src="assets/img/rahbari.png" alt="سال 1401"></a>
+            <a class="Government-news-site" href="#" title="وبسایت ریاست جمهوری"><img class="img-fluid mt-2" src="assets/img/riyasat.png" alt="سامانه خبری دولت"></a>
+            <a class="d-none d-lg-block" href="#" title="پایگاه خبری دولت"><img class="img-fluid mt-2" src="assets/img/president.png" alt="سامانه دولت"></a>
+            <img class="mt-3 rounded border-0 img-fluid" src="assets/img/shahid-soleymani.png" alt="shahid soleymani">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------ End header news section ------------------ -->
+    <!-- ------------------ Start baner news section ------------------ -->
+    <section id="BanerNews" class="container">
+      <div class="row">
+        <div class="col-12">
+          <img class="img-fluid" src="assets/img/Artin-baner.png" alt="Artin baner image">
+        </div>
+      </div>
+    </section>
+    <!-- ------------------ End baner news section ------------------ -->
+    <!-- ------------------ Start statistics section ------------------  -->
+    <section id="statistics" class="container statistics-section">
+      <div class="col-sm-12 statistics-container">
+          <div class="counter-statistics-wrapper d-flex align-items-center justify-content-between">
+            <div class="counter-statistics-inner d-flex flex-column align-items-center justify-content-center">
+              <img class="mb-3" src="assets/img/students.png" alt="دانش آموز عشایر">
+              <div class="counter mb-3" data-count="15000">0</div>
+              <p class="mb-0 text-center">دانش آموز عشایر</p>
+            </div>
+            <div class="counter-statistics-inner d-flex flex-column align-items-center justify-content-center">
+              <img class="mb-3" src="assets/img/training.png" alt="معلمان عشایر">
+              <div class="counter mb-3" data-count="1800">0</div>
+              <p class="mb-0 text-center">معلمان عشایر</p>
+            </div>
+            <div class="counter-statistics-inner d-flex flex-column align-items-center justify-content-center">
+              <img class="mb-3" src="assets/img/presentation.png" alt="راهبران آموزشی">
+              <div class="counter mb-3" data-count="350">0</div>
+              <p class="mb-0 text-center">راهبران آموزشی</p>
+            </div>
+            <div class="counter-statistics-inner d-flex flex-column align-items-center justify-content-center">
+              <img class="mb-3" src="assets/img/school.png" width="50" height="50" alt="مدارس عشایری">
+              <div class="counter mb-3" data-count="800">0</div>
+              <p class="mb-0 text-center">مدارس عشایری</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- ------------------ End statistics section ------------------ -->
+    <!-- ------------------ Start information section ------------------  -->
+    <section id="information" class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 information-image-section mt-3">
+          <img class="img-fluid" src="assets/img/student news image.png" alt="boss image">
+          <a href="book-introduction.html"><p>معرفی کتاب برای دانش آموزان<i class="fa-solid fa-arrow-left ml-1"></i></p></a>
+        </div>
+        <div class="col-12 col-md-4 information-card-wrapper mt-3">
+          <div class="information-card-container">
+            <img class="img-fluid" src="assets/img/nformation-content-image-1.png" alt="information-news-image">
+            <div class="information-card-inner">
+              <h5 class="mb-2">یک توپ برای همه</h5>
+              <p>کتاب یک توپ برای همه داستان کودکانی است که هر کدام تفاوت های یکدیگر را پذیرفته اندو در کنار هم بازی و مشارکت را تجربه می کنند. </p>
+              <ul>
+                <li>#معرفی_کتاب</li>
+                <li>#کتاب_خوب_بخوانیم</li>
+                <li>#داستان</li>
+              </ul>
+              <span class="d-block mt-3">مناسب گروه سنی : ابتدایی دوره دوم</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 information-card-wrapper mt-3">
+          <div class="information-card-container">
+            <img class="img-fluid" src="assets/img/nformation-content-image-2.png" alt="information-news-image">
+            <div class="information-card-inner">
+              <h5 class="mb-2">ماشین افاده ای</h5>
+              <p>ماشین ها همه با هم در یک فروشگاه زندگی می کنند تا اینکه یک روز یک ماشین جدید به آنجا می آید که با همه فرق دارد ...</p>
+              <ul>
+                <li>#معرفی_کتاب</li>
+                <li>#کتاب_خوب_بخوانیم</li>
+                <li>#داستان</li>
+              </ul>
+              <span class="d-block mt-3">مناسب گروه سنی : ابتدایی دوره اول</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------ End information section ------------------ -->
+    <!-- ------------------ Start Important news section------------------ -->
+    <section id="importantNews" class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 important-news-content">
+          <h3>دریافت اخبار از طریق پیام رسان شاد</h3>
+          <p>با عضویت در گروه ما در نرم افزار شاد شما به کلیه اخبار و پیام ها دسترسی خواهید داشت.</p>
+          <span>ایجاد تعاملی پایدار و مناسب میان فرهنگیان و دانش آموزان و همچنین اولیا آنان سبب میشود که بتوانیم بهترین عملکرد را در اختیار یکدیگر قرار دهیم و به خواسته نهایی که رشد و شکوفایی دانش آموزانمان است دست پیدا کنیم.</span>
+          <a class="details-new-btn text-decoration-none" href="https://shad.ir/farsmedunews"><i class="fa-solid fa-plus mr-1" style="vertical-align:-2px;"></i>عضویت در گروه</a>
+        </div>
+        <div class="col-12 col-md-6 important-news-image">
+          <img class="img-fluid" src="assets/img/ShadApp-image.png" alt="studest and school image">
+        </div>
+      </div>
+    </section>
+    <!-- ------------------ End Important news section------------------ -->
+    <!-- ------------------ Start webservices section------------------ -->
+    <section id="webservices" class="container-fluid webservices-section">
+      <button class="webservices-btn d-flex align-items-center justify-content-center" type="button"><i class="fa-solid fa-angle-down"></i></button>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-4 web-services-header d-flex align-items-center justify-content-center">
+            <h5 class="d-flex align-items-center">خدمات الکترونیک آموزش و پرورش<img class="ml-1" src="assets/img/computer-classic.svg" alt="services icon"></h5>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 web-services-card-section">
+            <a class="text-decoration-none d-flex align-items-center justify-content-center" href="https://eo.medu.ir/fonix/sts/?wa=wsignin1.0&wtrealm=http%3A%2F%2Fbaridsoft.ir%2Fmailbox%2F&wctx=rm%3D0%26id%3Dl5ie4hfrjkwos5bj1mw40wwl%26ru%3D%2523%252Fincomemessage%252F&wct=2022-09-17T19%3A43%3A21Z&wreply=https%3A%2F%2Feo.medu.ir%2Ffonix%2FMailbox%2F" target="_blank">
+              <div class="web-services-card-inner d-flex flex-column align-items-center justify-content-center">
+                <img src="assets/img/monitor.png" alt="icon image">
+                <p>اتوماسیون اداری</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 web-services-card-section">
+            <a class="text-decoration-none d-flex align-items-center justify-content-center" href="https://ltms.medu.ir/" target="_blank">
+              <div class="web-services-card-inner d-flex flex-column align-items-center justify-content-center">
+                <img src="assets/img/presentation.png" alt="icon image">
+                <p>سامانه ضمن خدمت فرهنگیان</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 web-services-card-section">
+            <a class="text-decoration-none d-flex align-items-center justify-content-center" href="https://emt.medu.ir/" target="_blank">
+              <div class="web-services-card-inner d-flex flex-column align-items-center justify-content-center">
+                <img src="assets/img/evidence.png" alt="icon image">
+                <p>سامانه تایید مدارک تحصیلی</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 web-services-card-section">
+            <a class="text-decoration-none d-flex align-items-center justify-content-center" href="https://sida.medu.ir/#/login" target="_blank">
+              <div class="web-services-card-inner d-flex flex-column align-items-center justify-content-center">
+                <img src="assets/img/student.png" alt="icon image">
+                <p>سامانه دانش آموزشی سیدا</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 web-services-card-section">
+            <a class="text-decoration-none d-flex align-items-center justify-content-center" href="#" target="_blank">
+              <div class="web-services-card-inner d-flex flex-column align-items-center justify-content-center">
+                <img src="assets/img/koran.png" alt="icon image">
+                <p>سامانه جامع حفظ قرآن کریم</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 web-services-card-section">
+            <a class="text-decoration-none d-flex align-items-center justify-content-center" href="#" target="_blank">
+              <div class="web-services-card-inner d-flex flex-column align-items-center justify-content-center">
+                <img src="assets/img/students.png" alt="icon image">
+                <p>سامانه دانش آموزشی شاد</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 web-services-card-section">
+            <a class="text-decoration-none d-flex align-items-center justify-content-center" href="https://sida.medu.ir/#/login" target="_blank">
+              <div class="web-services-card-inner d-flex flex-column align-items-center justify-content-center">
+                <img src="assets/img/5-stars.png" alt="icon image">
+                <p>سامانه اسکان فرهنگیان</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 web-services-card-section">
+            <a class="text-decoration-none d-flex align-items-center justify-content-center" href="https://sida.medu.ir/#/login" target="_blank">
+              <div class="web-services-card-inner d-flex flex-column align-items-center justify-content-center">
+                <img src="assets/img/ranking.png" alt="icon image">
+                <p>سامانه رتبه بندی معلمان</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------ End webservices section------------------ -->
+    <!-- ------------------ Start Short news section------------------ -->
+    <section id="shortNews" class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 short-news-image">
+          <img class="img-fluid w-75" src="assets/img/baner-image.jpg" alt="studest and school image">
+          <i class="fa-solid fa-xmark"></i>
+          <i class="fa-solid fa-school"></i>
+        </div>
+        <div class="col-12 col-md-6 short-news-content">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <h3>تاریخچه مدارس عشایری</h3>
+          <p>صاحب کتاب ˝ تاریخ وصاف˝ از وجود مدرسه ای سیار در زمان سلطان محمد خدابنده خبر می دهد</p>
+          <span>تا اواخر دوره قاجار سواد آموزی مدرن در بین کوچ نشینان رواج نداشت بلکه سواد آموزی به شکل سنتی و در قالب مکتب خانه  بوده است.</span>
+          <span>معمولاً افراد ثروتمند از یک "ملا"  یا "میرزا" دعوت می کردند که به فرزندان آنان سواد بیاموزد . حقوق وی را هم اولیاء فرزندان تامین می کردند. مواد درسی شامل قرائت قرآن کریم، شاهنامه فردوسی، گلستان سعدی، دیوان حافظ، داستان فلک ناز و و امثال این ها بود. حساب سیاق هم جزئی از برنامه ی درسی آنان بود .</span>
+          <a class="details-new-btn text-decoration-none mt-3 d-inline-block" href="details-nomadic.html"><i class="fa-solid fa-circle-info mr-1"></i>ادامه مطلب ...</a>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------ End Short news section------------------ -->
+    <!-- ------------------ Start calendar section------------------ -->
+    <section id="calendar" class="container mb-5 d-flex align-items-center justify-content-center">
+      <div class="row">
+        <div class="col-12 calendar-section">
+          <div class="calendar-inner">
+            <div class="calendar-card-title d-flex flex-column align-items-center justify-content-center">
+              <i class="fa-regular fa-calendar-days"></i>
+              <h5>تقویم</h5>
+              <p class="text-center">مهر ماه 1401</p>
+            </div>
+            <div class="calendar-card-content">
+              <h4>3 مهر</h4>
+              <div class="calendar-details">
+                <span>28 صفر</span>
+                <div>
+                  <p>رحلت رسول اکرم</p>
+                  <strong dir="ltr">25 september</strong>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-card-content">
+              <h4>5 مهر</h4>
+              <div class="calendar-details">
+                <span>30 صفر</span>
+                <div>
+                  <p>شهادت امام رضا علیه السلام</p>
+                  <strong dir="ltr">27 september</strong>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-card-content card-four border-0">
+              <h4>13 مهر</h4>
+              <div class="calendar-details">
+                <span>8 ربيع الاول</span>
+                <div>
+                  <p>شهادت امام حسن عسکری علیه السلام</p>
+                  <strong dir="ltr">5 October</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------ End calendar section------------------ -->
+    <!-- ------------------ Start Educational post section------------------ -->
+    <section id="educationalpost" class="container">
+      <div class="row">
+        <div class="col-12 educational-post-header mb-4 d-flex flex-column align-items-center justify-content-center">
+          <h3>مطالب آموزشی</h3>
+          <p>مطالب زیر به شما کمک خواهند کرد تا بتوانید به راحتی و به صورت کاملا برخط امور خود را انجام دهید.</p>
+        </div>
+        <div class="col-12 mb-3">
+          <div class="owl-carousel educational-owl-carousel">
+            <div class="educational-post-card-wrapper p-5">
+              <div class="educational-post-card-inner">
+                <img class="img-fluid" src="assets/img/cida.svg" alt="card educational image">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                  <p>آموزش ورود به سامانه سیدا</p>
+                  <a class="text-decoration-none stretched-link" href="#">مشاهده<i class="fa-solid fa-arrow-left ml-1"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="educational-post-card-wrapper p-5">
+              <div class="educational-post-card-inner">
+                <img class="img-fluid" src="assets/img/jabejayi.svg" alt="card educational image">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                  <p>آموزش ثبت درخواست انتقالی</p>
+                  <a class="text-decoration-none stretched-link" href="#">مشاهده<i class="fa-solid fa-arrow-left ml-1"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="educational-post-card-wrapper p-5">
+              <div class="educational-post-card-inner">
+                <img class="img-fluid" src="assets/img/otomasion.svg" alt="card educational image">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                  <p>آموزش نحوه ورود به اتوماسیون اداری</p>
+                  <a class="text-decoration-none stretched-link" href="#">مشاهده<i class="fa-solid fa-arrow-left ml-1"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="educational-post-card-wrapper p-5">
+              <div class="educational-post-card-inner">
+                <img class="img-fluid" src="assets/img/educate.svg" alt="card educational image">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                  <p>آموزش ثبت نام دوره ضمن خدمت</p>
+                  <a class="text-decoration-none stretched-link" href="#">مشاهده<i class="fa-solid fa-arrow-left ml-1"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="educational-post-card-wrapper p-5">
+              <div class="educational-post-card-inner">
+                <img class="img-fluid" src="assets/img/shopping-book.svg" alt="card educational image">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                  <p>آموزش ثبت سفارش کتب درسی</p>
+                  <a class="text-decoration-none stretched-link" href="#">مشاهده<i class="fa-solid fa-arrow-left ml-1"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="educational-post-card-wrapper p-5">
+              <div class="educational-post-card-inner">
+                <img class="img-fluid" src="assets/img/login-otomasion.svg" alt="card educational image">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                  <p>آموزش ورود به سامانه راهبران</p>
+                  <a class="text-decoration-none stretched-link" href="#">مشاهده<i class="fa-solid fa-arrow-left ml-1"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------ End Educational post section------------------ -->
+    <!-- ------------------ Start slider image gallery section------------------ -->
+    <section id="gallery" class="container">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center justify-content-center">
+          <div class="gallery-container">
+            <div class="gallery-inner">
+               <div class="shadow-section"></div>
+               <div class="label">
+                  <div class="icon">
+                    <i class="fa-solid fa-newspaper"></i>
+                  </div>
+                  <div class="info">
+                     <div class="main">مسابقات هوش</div>
+                     <div class="sub">برگزاری مسابقه در بین دانش آموزان ابتدایی عشایری</div>
+                  </div>
+               </div>
+            </div>
+            <div class="gallery-inner">
+              <div class="shadow-section"></div>
+              <div class="label">
+                 <div class="icon">
+                  <i class="fa-regular fa-newspaper"></i>
+                 </div>
+                 <div class="info">
+                    <div class="main">کتابخوانی</div>
+                    <div class="sub">ساخت کتابخانه جدید در 30 مدرسه عشایری</div>
+                 </div>
+              </div>
+            </div>
+            <div class="gallery-inner active">
+              <div class="shadow-section"></div>
+              <div class="label">
+                 <div class="icon">
+                  <i class="fa-regular fa-newspaper"></i>
+                 </div>
+                 <div class="info">
+                    <div class="main">مدارس خاص</div>
+                    <div class="sub">مدارس استعدادهای درخشان در دنیا</div>
+                 </div>
+              </div>
+            </div>
+            <div class="gallery-inner">
+              <div class="shadow-section"></div>
+              <div class="label">
+                 <div class="icon">
+                  <i class="fa-regular fa-newspaper"></i>
+                 </div>
+                 <div class="info">
+                    <div class="main">آموزش نقاشی</div>
+                    <div class="sub">آموزشی نوین به همراه مدرک معتبر</div>
+                 </div>
+              </div>
+            </div>
+            <div class="gallery-inner">
+              <div class="shadow-section"></div>
+              <div class="label">
+                 <div class="icon">
+                  <i class="fa-regular fa-newspaper"></i>
+                 </div>
+                 <div class="info">
+                    <div class="main">تاریخ ایران و اسلام</div>
+                    <div class="sub">باید همه افراد جامعه از تاریخ کشورشان آگاه باشند و به آن افتخار کنند.</div>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------ End slider image gallery section------------------ -->
+    <!-- ------------------ Start Newsletter section------------------ -->
+    <section id="newsletters" class="container">
+      <div class="row">
+        <div class="col-sm-12 newsletters-wrapper">
+          <h5>عضوت در خبرنامه</h5>
+          <span class="d-block mb-4">با عضویت در خبرنامه از جدید ترین اخبار و اطلاعیه های آموزش و پرورش عشایری با خبر شوید !!!</span>
+          <form action="" autocomplete="off">
+            <div class="inputs-group">
+              <input type="email" placeholder="example@gmail.com">
+              <p>* لطفا ایمیل معتبر خود را وارد نمایید.</p>
+              <button type="submit">عضویت</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------ End Newsletter section------------------ -->
+    <!-- ---------------- Start footer section ---------------- -->
+    <footer id="footer" class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-lg-4 footer-content-section">
+            <h5>پربازدید ترین ها</h5>
+            <ul>
+              <li><a class="text-decoration-none" href="#"><i class="fa-solid fa-chevron-left mr-1"></i>سامانه راهبران</a></li>
+              <li><a class="text-decoration-none" href="#"><i class="fa-solid fa-chevron-left mr-1"></i>سامانه ضمن خدمت</a></li>
+              <li><a class="text-decoration-none" href="#"><i class="fa-solid fa-chevron-left mr-1"></i>معاونت آموزشی</a></li>
+              <li><a class="text-decoration-none" href="#"><i class="fa-solid fa-chevron-left mr-1"></i>سامانه اسکان فرهنگیان</a></li>
+              <li><a class="text-decoration-none" href="#"><i class="fa-solid fa-chevron-left mr-1"></i>رتبه بندی معلمان</a></li>
+              <li><a class="text-decoration-none" href="#"><i class="fa-solid fa-chevron-left mr-1"></i>اتوماسیون اداری</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-4 footer-content-section">
+            <h5>لینک های مرتبط</h5>
+            <ul>
+              <li><a class="text-decoration-none" href="#"><i class="fa-solid fa-chevron-left mr-1"></i>وزارت آموزش و پرورش</a></li>
+              <li><a class="text-decoration-none" href="#"><i class="fa-solid fa-chevron-left mr-1"></i>سامانه معلم</a></li>
+              <li><a class="text-decoration-none" href="#"><i class="fa-solid fa-chevron-left mr-1"></i>سامانه جامع نماد</a></li>
+              <li><a class="text-decoration-none" href="#"><i class="fa-solid fa-chevron-left mr-1"></i>سامانه اسکان فرهنگیان</a></li>
+              <li><a class="text-decoration-none" href="#"><i class="fa-solid fa-chevron-left mr-1"></i>رتبه بندی معلمان</a></li>
+              <li><a class="text-decoration-none" href="#"><i class="fa-solid fa-chevron-left mr-1"></i>اتوماسیون اداری</a></li>
+            </ul>
+          </div>
+          <div class="col-12 mt-3 col-lg-4 footer-social-content-section">
+            <h5>راه های ارتباطی</h5>
+            <ul class="address-link-section">
+              <li><a class="text-decoration-none" href="#"><i class="fa-solid fa-square-phone mr-1"></i>تلفن : 32292502-071</a></li>
+              <li><a class="text-decoration-none" href="#"><i class="fa-solid fa-location-dot mr-1"></i>آدرس : شیراز - خیابان ارم - کوچه 16 - مدیریت آموزش و پرورش عشایر فارس</a></li>
+              <li><a class="text-decoration-none" href="#"><i class="fa-solid fa-envelope mr-1"></i>ایمیل : info@nomadic.ir</a></li>
+            </ul>
+            <div class="social-media-section">
+              <ul class="d-flex align-items-center">
+                <li class="mr-3"><a class="text-decoration-none" href="#" title="اینستاگرام"><img src="assets/img/instagram.png" width="30" height="30" alt="instagram"></a></li>
+                <li class="mr-3"><a class="text-decoration-none" href="#" title="ایتا"><img src="assets/img/eita-logo.png" width="30" height="30" alt="eita"></a></li>
+                <li class="mr-3"><a class="text-decoration-none" href="#" title="سروش"><img src="assets/img/soroush-logo.png" width="30" height="30" alt="soroush"></a></li>
+                <li class="mr-3"><a class="text-decoration-none" href="#" title="شاد"><img src="assets/img/Shad-Logo.png" width="30" height="30" alt="shad"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right-section d-flex align-items-center justify-content-between">
+        <p class="mb-0 pl-2">تمام حقوق این وبسایت متعلق به <strong>مدیریت آموزش و پرورش عشایر فارس</strong> می باشد.</p>
+        <p class="mb-0 pr-2">Design By <a class="text-warning" target="_blank" href="https://www.sandboxes.ir">sandboxes.ir</a></p>
+      </div>
+    </footer>
+    <!-- ---------------- End footer section ---------------- -->
+    <!-- btn scroll to top -->
+    <button id="btnscroll" class="btn-scroll" type="button">
+      <img src="assets/img/down-chevron.png" alt="scroll btn image">
+    </button>
+    <!-- btn scroll to top -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/countMe.min.js"></script>
+    <!-- ---------------- Start Talk to support section ---------------- -->
+    <script type="text/javascript">
+      !function(){var i="cF6vCc",a=window,d=document;function g(){var g=d.createElement("script"),s="https://www.goftino.com/widget/"+i,l=localStorage.getItem("goftino_"+i);g.async=!0,g.src=l?s+"?o="+l:s;d.getElementsByTagName("head")[0].appendChild(g);}"complete"===d.readyState?g():a.attachEvent?a.attachEvent("onload",g):a.addEventListener("load",g,!1);}();
+    </script>
+    <!-- ---------------- End Talk to support section ---------------- -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+// --------------- Start contact us style
+#contact{
+    margin-top: 100px;
+    .contact-header-section{
+        h3{
+            color: $contact-header-color;
+            margin-bottom: 40px;
+            font: {
+                weight:700;
+                size:$default-font-size + 10px
+            }
+        }
+        p{
+            color: rgb(83, 83, 83);
+            margin-bottom: 60px;
+            font: {
+                size:$default-font-size - 1px
+            }
+            line-height: 25px;
+        }
+    }
+    .socail-media-contact-section{
+        @include flex(flex,center,space-around);
+        .socail-contact-card{
+            text-decoration: none;
+            @include flex(flex,center,space-between);
+            background-color: #fff;
+            @include margin-padding(15px,20px,15px,20px,false);
+            box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.219);
+            border-radius: 7px;
+            @include transition-default(all,0.4s);
+            &:hover{
+                transform: translateY(-5px);
+            }
+            &:active{
+                transform: scale(0.9);
+            }
+            img{
+                width: 40px;
+                height: 40px;
+                margin-left: 10px;
+            }
+            div{
+                span{
+                    display: block;
+                }
+                span:nth-child(1){
+                    direction: ltr;
+                    font: {
+                        size:$default-font-size + 1px;
+                        weight:700;
+                    }
+                    color: rgb(31, 6, 145);
+                }
+                span:nth-child(2){
+                    font: {
+                        size:$default-font-size - 1px;
+                    }
+                    color: rgb(112, 112, 112);
+                }
+            }
+        }
+    }
+    .details-contact-section{
+        margin-top: 60px;
+        .details-contact-card{
+            @include flex(flex,center,null);
+            margin-top: 20px;
+            img{
+                width: 50px;
+                height: 50px;
+            }
+            div{
+                @include margin-padding(15px,10px,0,0,false);
+                span{
+                    font: {
+                        size:$default-font-size + 3px;
+                        weight:700;
+                    }
+                    color: rgb(66, 6, 179);
+                    margin-bottom: 15px;
+                    display: block;
+                }
+                p{
+                    font: {
+                        size:$default-font-size + 1px;
+                    }
+                    color: rgb(78, 78, 78);
+                }
+            }
+        }
+    }
+    .location-contact-section{
+        margin-top: 50px;
+        overflow: hidden;
+        iframe{
+            border-radius: 20px;
+            box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.151);
+            border: 3px solid rgb(45, 2, 126);
+            width: 100%;
+            height: 100%;
+        }
+    } 
+}
+@media only screen and (max-width:992px){
+    .socail-media-contact-section{
+        display: block!important;
+        .socail-contact-card{
+            justify-content: unset!important;
+            margin-bottom: 20px;
+        }
+    }
+}

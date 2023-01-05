@@ -1,0 +1,17 @@
+// Start btn scroll to top section
+#btnscroll{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    position: fixed;
+    z-index: 100;
+    bottom: 10px;
+    right: 30px;
+    @include transition-default(all,0.4s);
+    img{
+        width: 40px;
+        height: 40px;
+        transform: rotate(180deg);
+        filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.3));
+    }
+}

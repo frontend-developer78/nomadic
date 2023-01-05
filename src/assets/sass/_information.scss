@@ -1,0 +1,111 @@
+// ------------- Start information section
+#information{
+    margin-top: 130px;
+    .information-image-section{
+        position: relative;
+        img{
+            border-radius: 20px;
+            box-shadow:  16px 16px 35px #3a3a3a7e,
+            -16px -16px 35px #ffffff;
+            width: 100%
+        }
+        p{
+            @include position-absolute(null,65px,12px,null);
+            color: #fff;
+            background-color: rgb(108, 29, 212);
+            @include margin-padding(3px,8px,3px,8px,false);
+            border-radius: 5px;
+            font: {
+                size:$default-font-size + 1px;
+            }
+            i{
+                vertical-align: -2px;
+                font: {
+                    size: $default-font-size - 1px;
+                }
+            }
+        }
+    }
+    .information-card-wrapper{
+        .information-card-container{
+            background-color: $information-card-bg;
+            @include margin-padding(8px,8px,8px,8px,false);
+            border-radius: 20px;
+            box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+            border: 1px solid #f8f8f8;
+            img{
+                border-radius: 32px 10px 27px 10px;
+                width: 100%
+            }
+            .information-card-inner{
+                @include margin-padding(8px,8px,8px,8px,false);
+                h5{
+                    font: {
+                        size: $default-font-size + 2px;
+                        weight: 700;
+                    }
+                    color: $information-card-header-color;
+                    margin-top: 15px;
+                }
+                p{
+                    font: {
+                        size: $default-font-size - 2px;
+                    }
+                    line-height: 25px;
+                    color: #818181;
+                    margin-top: 10px;
+                }
+                ul{
+                    li{
+                        font: {
+                            size: $default-font-size - 2px;
+                        }
+                        margin-bottom: 5px;
+                        color: $hashtag-color;
+                        cursor: pointer;
+                        @include transition-default(all,0.3s);
+                        &:hover{
+                            color: $hashtag-color-hover;
+                        }
+                    }
+                }
+                span{
+                    font: {
+                        size: $default-font-size - 1px;
+                    }
+                    color: rgb(73, 1, 107);
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:768px){
+    #information{
+        .information-image-section{
+            p{
+                right: 137px;
+                i{
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    #information{
+        .information-image-section{
+            p{
+                right: 120px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 400px){
+    #information{
+        .information-image-section{
+            p{
+                right: 72px; 
+            }
+        }
+    }
+}
